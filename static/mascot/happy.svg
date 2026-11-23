@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="핏이 happy">
+<ellipse cx="100" cy="188" rx="58" ry="8" fill="#000" opacity=".08"/>
+<g><path d="M28 120 q-14 -26 -4 -44" stroke="#E8734A" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M172 120 q14 -26 4 -44" stroke="#E8734A" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M100 36 C150 36 172 74 172 116 C172 158 140 180 100 180 C60 180 28 158 28 116 C28 74 50 36 100 36 Z" fill="#FF8A5B"/>
+<path d="M44 64 Q100 44 156 64 L152 77 Q100 60 48 77 Z" fill="#2B2F3A"/>
+<path d="M154 68 l20 -8 l-4 14 z" fill="#2B2F3A"/>
+<path d="M70 92 q10 -12 20 0" stroke="#2B2F3A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M110 92 q10 -12 20 0" stroke="#2B2F3A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M82 118 q18 22 36 0 z" fill="#2B2F3A"/><path d="M90 126 q10 8 20 0" fill="#FF5A6A"/><circle cx="62" cy="112" r="8" fill="#FF5A6A" opacity=".45"/><circle cx="138" cy="112" r="8" fill="#FF5A6A" opacity=".45"/></g></svg>

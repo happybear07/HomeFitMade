@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="핏이 angry">
+<ellipse cx="100" cy="188" rx="58" ry="8" fill="#000" opacity=".08"/>
+<g><path d="M28 116 q-16 -6 -14 -30" stroke="#C94A36" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="14" cy="84" r="9" fill="#C94A36"/><path d="M172 116 q16 -6 14 -30" stroke="#C94A36" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="186" cy="84" r="9" fill="#C94A36"/>
+<path d="M100 36 C150 36 172 74 172 116 C172 158 140 180 100 180 C60 180 28 158 28 116 C28 74 50 36 100 36 Z" fill="#F0614A"/>
+<path d="M44 64 Q100 44 156 64 L152 77 Q100 60 48 77 Z" fill="#2B2F3A"/>
+<path d="M154 68 l20 -8 l-4 14 z" fill="#2B2F3A"/>
+<circle cx="80" cy="100" r="6" fill="#2B2F3A"/><circle cx="120" cy="100" r="6" fill="#2B2F3A"/><path d="M64 84 l26 10" stroke="#2B2F3A" stroke-width="6" stroke-linecap="round"/><path d="M136 84 l-26 10" stroke="#2B2F3A" stroke-width="6" stroke-linecap="round"/><rect x="84" y="122" width="32" height="12" rx="4" fill="#2B2F3A"/><path d="M90 128 h20" stroke="#fff" stroke-width="2"/><path d="M150 46 l8 -10 m-4 14 l12 -4 m-12 -2 l10 6" stroke="#B52A1C" stroke-width="5" stroke-linecap="round"/></g></svg>
