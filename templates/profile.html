@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}내 정보 · 홈핏 메이트{% endblock %}
+{% block content %}
+<h1>내 정보</h1>
+<p class="sub">한 번 저장하면 다음부터는 바로 홈 화면으로 이동해요.</p>
+{% if bmi %}
+<div class="card bmi">
+  <div><small>내 BMI</small><b>{{ bmi }}</b></div>
+  <p>{% if bmi < 18.5 %}저체중{% elif bmi < 23 %}정상{% elif bmi < 25 %}과체중{% else %}비만 · 관절 부담이 큰 운동은 빼고 추천해요{% endif %}</p>
+</div>
+<p class="note">BMI는 근육량을 구분하지 못해서 운동을 고를 때 참고로만 써요.</p>
+{% endif %}
+<form method="post" class="card form">
+  <label>키 (cm)<input type="number" name="height" step="0.1" min="100" max="230" required value="{{ user.height or '' }}"></label>
+  <label>몸무게 (kg)<input type="number" name="weight" step="0.1" min="25" max="250" required value="{{ user.weight or '' }}"></label>
+  <fieldset>
+    <legend>난이도</legend>
+    {% for lv in ['초급', '중급', '고급'] %}
+    <label class="chip"><input type="radio" name="level" value="{{ lv }}" {% if (user.level or '초급') == lv %}checked{% endif %}><span>{{ lv }}</span></label>
+    {% endfor %}
+  </fieldset>
+  <button class="btn primary" type="submit">저장하기</button>
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}홈핏 메이트{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<!-- stage.key(happy/sad/angry/faint)에 따라 화면 전체 테마가 바뀐다 -->
+<body class="stage-{{ stage.key }}">
+  {% if stage.key in ['angry', 'faint'] %}
+  <div class="banner">{{ days }}일째 운동을 쉬고 있어요</div>
+  {% endif %}
+  <header class="top">
+    <a href="{{ url_for('home') }}" class="logo">홈핏 메이트</a>
+  </header>
+  <main class="wrap">
+    {% for msg in get_flashed_messages() %}<p class="flash">{{ msg }}</p>{% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="foot">추천은 일반적인 운동 가이드이며 의학적 조언을 대신하지 않습니다.</footer>
+  {% set ep = request.endpoint %}
+  <nav class="tabbar" aria-label="메뉴">
+    <a href="{{ url_for('home') }}" class="{{ 'on' if ep in ['home', 'routine_page', 'workout', 'done'] }}"><span class="ic">🏠</span>홈</a>
+    <a href="{{ url_for('exercise_list') }}" class="{{ 'on' if ep in ['exercise_list', 'exercise_detail'] }}"><span class="ic">📖</span>운동 도감</a>
+    <a href="{{ url_for('history') }}" class="{{ 'on' if ep == 'history' }}"><span class="ic">📅</span>기록</a>
+    <a href="{{ url_for('profile') }}" class="{{ 'on' if ep == 'profile' }}"><span class="ic">👤</span>내 정보</a>
+  </nav>
+</body>
+</html>

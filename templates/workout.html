@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ ex.name }} · 홈핏 메이트{% endblock %}
+{% block content %}
+<div class="progress" aria-label="진행도"><span style="width: {{ (idx / total * 100)|round }}%"></span></div>
+<p class="sub">{{ idx + 1 }} / {{ total }}</p>
+<div class="video">
+  {% if has_video %}
+  <video src="{{ url_for('static', filename=ex.video[7:]) }}" controls loop playsinline></video>
+  {% else %}
+  <p>시범 영상 준비 중</p>
+  {% endif %}
+</div>
+<h1>{{ ex.name }}</h1>
+<p class="big">{{ ex.reps }}{{ ex.unit or '회' }} × {{ ex.sets }}세트</p>
+<p class="desc">{{ ex.description }}</p>
+<div class="actions row">
+  <a class="btn ghost" href="{{ url_for('workout', idx=idx + 1) }}">건너뛰기</a>
+  <a class="btn primary" href="{{ url_for('workout', idx=idx + 1) }}">{{ '운동 완료' if idx + 1 == total else '다음 운동' }}</a>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ ex.name }} · 홈핏 메이트{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('exercise_list') }}">‹ 운동 도감</a>
+<div class="video">
+  {% if has_video %}<video src="{{ url_for('static', filename=ex.video[7:]) }}" controls loop playsinline></video>
+  {% else %}<p>시범 영상 준비 중</p>{% endif %}
+</div>
+<h1>{{ ex.name }}</h1>
+<div class="facts">
+  <span class="tag part-{{ ex.part }}">{{ ex.part }}</span>
+  <span class="tag">{{ ex.level }}</span>
+  <span class="tag">관절 부담 {{ ex.joint_load }}</span>
+  <span class="tag">운동 강도 {{ ex.met }} MET</span>
+</div>
+<p class="big">기본 {{ ex.reps }}{{ ex.unit or '회' }} × {{ ex.sets }}세트</p>
+<section class="card"><h2>이렇게 하세요</h2><p class="desc">{{ ex.description }}</p></section>
+{% endblock %}

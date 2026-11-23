@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}운동 기록 · 홈핏 메이트{% endblock %}
+{% block content %}
+<h1>운동 기록</h1>
+<div class="stats">
+  <div class="stat"><b>{{ info.days }}</b><small>운동한 날</small></div>
+  <div class="stat"><b>{{ info.best_streak }}</b><small>최장 연속</small></div>
+  <div class="stat"><b>{{ info.calories }}</b><small>누적 kcal</small></div>
+</div>
+
+<section class="card cal">
+  <div class="cal-head">
+    <a href="{{ url_for('history', y=prev_ym[0], m=prev_ym[1]) }}" aria-label="이전 달">‹</a>
+    <b>{{ year }}년 {{ month }}월</b>
+    <a href="{{ url_for('history', y=next_ym[0], m=next_ym[1]) }}" aria-label="다음 달">›</a>
+  </div>
+  <div class="cal-grid">
+    {% for w in ['일','월','화','수','목','금','토'] %}<span class="dow">{{ w }}</span>{% endfor %}
+    {% for week in weeks %}{% for d in week %}
+      {% if d == 0 %}<span></span>{% else %}
+      {% set key = '%04d-%02d-%02d'|format(year, month, d) %}
+      <span class="day {{ 'done' if key in info.dates }} {{ 'today' if key == today.isoformat() }}">{{ d }}</span>
+      {% endif %}
+    {% endfor %}{% endfor %}
+  </div>
+</section>
+
+<h2>배지</h2>
+<div class="badges">
+  {% for name, desc, got in badges %}
+  <div class="badge {{ 'got' if got else 'lock' }}">
+    <span class="medal">{{ '🏅' if got else '🔒' }}</span>
+    <b>{{ name }}</b><small>{{ desc }}</small>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>최근 운동</h2>
+{% if info.recent %}
+<ul class="list card">
+  {% for r in info.recent %}
+  <li><span class="name">{{ r.date }} <small>{{ r.exercises|length }}개 운동</small></span><span class="amount">{{ r.calories }}kcal</span></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="card empty">아직 기록이 없어요. 첫 운동을 시작해보세요!</p>
+{% endif %}
+{% endblock %}

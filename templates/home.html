@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <img class="mascot" src="{{ url_for('static', filename='mascot/' ~ stage.key ~ '.svg') }}" alt="마스코트 핏이 ({{ stage.name }})">
+  {% if streak > 0 %}
+    <p class="streak"><b>{{ streak }}</b>일 연속 운동 중</p>
+  {% elif days is not none %}
+    <p class="streak">마지막 운동 후 <b>{{ days }}</b>일</p>
+  {% endif %}
+  <p class="say">{{ stage.message }}</p>
+</section>
+<div class="actions">
+  <a class="btn primary" href="{{ url_for('routine_page') }}">오늘의 루틴 받기</a>
+  <div class="quick">
+    <a href="{{ url_for('routine_page', part='상체') }}" class="btn ghost">상체만</a>
+    <a href="{{ url_for('routine_page', part='하체') }}" class="btn ghost">하체만</a>
+    <a href="{{ url_for('routine_page', part='코어') }}" class="btn ghost">코어만</a>
+  </div>
+</div>
+<p class="meta">{{ user.level }} · 키 {{ user.height|int }}cm · 몸무게 {{ user.weight|int }}kg</p>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}운동 도감 · 홈핏 메이트{% endblock %}
+{% block content %}
+<h1>운동 도감</h1>
+<p class="sub">{{ items|length }}개 운동</p>
+<nav class="tabs">
+  {% for p in parts %}
+  <a href="{{ url_for('exercise_list', part=p) }}" class="tab {% if p == part %}on{% endif %}">{{ p }}</a>
+  {% endfor %}
+</nav>
+<div class="grid">
+  {% for e in items %}
+  <a class="ex card" href="{{ url_for('exercise_detail', name=e.name) }}">
+    <span class="tag part-{{ e.part }}">{{ e.part }}</span>
+    <b>{{ e.name }}</b>
+    <small>{{ e.level }} · 관절 부담 {{ e.joint_load }}</small>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

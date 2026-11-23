@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}화면 단계 미리보기 · 홈핏 메이트{% endblock %}
+{% block content %}
+<h1>쉬면 변하는 화면</h1>
+<p class="sub">마지막 운동 후 지난 날짜에 따라 홈 화면이 이렇게 바뀌어요. 카드를 누르면 실제 화면으로 이동해요.</p>
+<div class="stage-grid">
+  {% for d, label, st in samples %}
+  <a class="stage-card stage-{{ st.key }}" href="{{ url_for('home', days=d) }}">
+    <img src="{{ url_for('static', filename='mascot/' ~ st.key ~ '.svg') }}" alt="{{ st.name }} 마스코트">
+    <b>{{ label }}</b><small>{{ st.message }}</small>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

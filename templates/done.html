@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}완료 · 홈핏 메이트{% endblock %}
+{% block content %}
+<section class="hero">
+  <img class="mascot pop" src="{{ url_for('static', filename='mascot/happy.svg') }}" alt="기뻐하는 마스코트 핏이">
+  <h1>오늘 운동 완료!</h1>
+  {% if kcal is not none %}<p class="say">약 <b>{{ kcal }}</b>kcal를 썼어요 · {{ streak }}일 연속</p>{% endif %}
+</section>
+<div class="actions"><a class="btn primary" href="{{ url_for('home') }}">홈으로</a></div>
+{% endblock %}

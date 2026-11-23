@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}오늘의 루틴 · 홈핏 메이트{% endblock %}
+{% block content %}
+<h1>오늘의 루틴</h1>
+<p class="sub">약 {{ minutes }}분 · {{ items|length }}개 운동</p>
+<nav class="tabs">
+  {% for p in parts %}
+  <a href="{{ url_for('routine_page', part=p) }}" class="tab {% if p == part %}on{% endif %}">{{ p }}</a>
+  {% endfor %}
+</nav>
+{% if items %}
+<ol class="list card">
+  {% for e in items %}
+  <li>
+    <span class="name">{{ e.name }} <small>{{ e.part }}</small></span>
+    <span class="amount">{{ e.reps }}{{ e.unit or '회' }} × {{ e.sets }}세트</span>
+  </li>
+  {% endfor %}
+</ol>
+<div class="actions"><a class="btn primary" href="{{ url_for('workout', idx=0) }}">운동 시작하기</a></div>
+{% else %}
+<p class="card empty">조건에 맞는 운동이 없어요. 다른 부위를 골라보세요.</p>
+{% endif %}
+{% endblock %}
