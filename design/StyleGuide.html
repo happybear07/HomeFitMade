@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 시스템 v0.6 · 홈핏 메이트 화면 설계</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1C7460}
+</style>
+<style>body{margin:0;min-height:100vh;background:#E4DEDC;display:flex;justify-content:center;align-items:flex-start;padding:24px 0;box-sizing:border-box}body>div{box-shadow:0 12px 40px rgba(17,17,17,.12)}</style>
+</head>
+<body>
+<div style="width: 1260px; height: 900px; box-sizing: border-box; background: #F0EBEA; color: #111111; font-family: 'Inter', 'Noto Sans KR', sans-serif; letter-spacing: -0.01em; padding: 44px 52px; display: flex; flex-direction: column; gap: 28px">
+  <div style="display: flex; align-items: baseline; justify-content: space-between">
+    <h1 style="margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -0.03em">홈핏 메이트 디자인 시스템</h1>
+    <span style="font-size: 13px; color: #5F5856">v0.6 · 색: 팔레트 03 민트 클레이 · 형태: 둥근 흰 카드 + 은은한 그림자</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr); gap: 24px; flex: 1; min-height: 0">
+    <section style="padding: 22px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07); display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-size: 16px; font-weight: 800">글꼴</h2>
+      <p style="margin: 0; font-size: 12px; line-height: 1.5; color: #5F5856">Inter(숫자·영문) + Noto Sans KR(한글). Pretendard와 같은 구성이라 같은 인상을 냅니다. 제목은 800, 자간 -3%.</p>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px"><span style="font-size: 64px; font-weight: 800; line-height: 1; letter-spacing: -0.05em; color: #1C7460">17</span><span style="font-size: 12px; color: #5F5856">큰 숫자 88 / 800</span></div>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px"><span style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em">4일째 이어가는 중</span><span style="font-size: 12px; color: #5F5856">제목 26~28</span></div>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px"><span style="font-size: 18px; font-weight: 800; letter-spacing: -0.02em">오늘의 루틴</span><span style="font-size: 12px; color: #5F5856">소제목 16~18</span></div>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px"><span style="font-size: 15px">손은 어깨너비로 짚고</span><span style="font-size: 12px; color: #5F5856">본문 15 / 400</span></div>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px"><span style="font-size: 13px; color: #5F5856">중급 · 운동 5개</span><span style="font-size: 12px; color: #5F5856">보조 13 / 500</span></div>
+      <h2 style="margin: 8px 0 0; font-size: 16px; font-weight: 800">색</h2><p style="margin: 0; font-size: 12px; line-height: 1.5; color: #5F5856">color-palettes 스킬의 03 민트 클레이. 팔레트에 글자색이 없어 글자는 모두 #111. 민트·틸 위에 흰 글자를 쓰지 않음. 강조 숫자는 틸을 진하게 만든 #1C7460, 연한 색은 팔레트 색에서 만든 파생색.</p>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px">
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #F0EBEA; box-shadow: inset 0 0 0 1px #DDD6D4;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">뼈색 바탕</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#F0EBEA</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #FFFFFF; box-shadow: inset 0 0 0 1px #DDD6D4;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">카드</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#FFFFFF</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #111111;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">글자</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#111111</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #5F5856;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">보조 글자</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#5F5856</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #32B291;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">틸</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#32B291</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #4DFFCF;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">네온 민트</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#4DFFCF</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #4BE1BB;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">민트</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#4BE1BB</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #1C7460;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">진한 틸</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#1C7460</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #D1A08A;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">클레이</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#D1A08A</span>
+            </span>
+          </div>
+        
+          <div style="display: flex; align-items: center; gap: 8px">
+            <span style="width: 30px; height: 30px; border-radius: 10px; flex: none; box-sizing: border-box; background: #B42318;"></span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-size: 12px; font-weight: 700">경고 빨강</span>
+              <span style="font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">#B42318</span>
+            </span>
+          </div>
+        
+      </div>
+    </section>
+
+    <section style="padding: 22px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07); display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-size: 16px; font-weight: 800">음영 · 모서리</h2>
+      <div style="padding: 18px 14px; border-radius: 18px; background: #F0EBEA; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: end">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+          <span style="width: 72px; height: 56px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07)"></span>
+          <span style="font-size: 11px; text-align: center; color: #5F5856">카드<br>0 8 24 · 7%</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+          <span style="width: 56px; height: 56px; border-radius: 50%; background: #4DFFCF; box-shadow: 0 12px 24px rgba(50, 178, 145, 0.45)"></span>
+          <span style="font-size: 11px; text-align: center; color: #5F5856">떠 있는 버튼<br>초록 그림자</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+          <span style="width: 72px; height: 44px; border-radius: 18px 18px 0 0; background: #FFFFFF; box-shadow: 0 -10px 24px rgba(17, 17, 17, 0.14)"></span>
+          <span style="font-size: 11px; text-align: center; color: #5F5856">시트<br>위로 뜨는 그림자</span>
+        </div>
+      </div>
+      <div style="display: flex; gap: 10px; font-size: 11px; color: #5F5856">
+        <span style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 40px; height: 28px; border-radius: 12px; background: #D8F7EE"></span>카드 24</span>
+        <span style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 40px; height: 28px; border-radius: 9px; background: #D8F7EE"></span>버튼 16</span>
+        <span style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 40px; height: 28px; border-radius: 999px; background: #D8F7EE"></span>알약</span>
+        <span style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 40px; height: 28px; border-radius: 14px 14px 0 0; background: #D8F7EE"></span>시트 32</span>
+      </div>
+      <h2 style="margin: 8px 0 0; font-size: 16px; font-weight: 800">부품</h2>
+      <span style="display: flex; align-items: center; justify-content: center; height: 52px; border-radius: 16px; background: #4DFFCF; color: #111111; font-size: 15px; font-weight: 700; box-shadow: 0 10px 22px rgba(50, 178, 145, 0.35)">주요 버튼</span>
+      <div style="padding: 4px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.06), 0 6px 18px rgba(17, 17, 17, 0.08); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px">
+        <span style="height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 14px; font-size: 13px; color: #5F5856">주간</span>
+        <span style="height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700">월간</span>
+        <span style="height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 14px; font-size: 13px; color: #5F5856">전체</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px">
+        <span style="padding: 4px 10px; border-radius: 999px; background: #F6E9E3; color: #7A4A35; font-size: 12px; font-weight: 700">상체</span>
+        <span style="padding: 4px 10px; border-radius: 999px; background: #D8F7EE; color: #1C7460; font-size: 12px; font-weight: 700">하체</span>
+        <span style="padding: 4px 10px; border-radius: 999px; background: #ECE7E6; color: #111111; font-size: 12px; font-weight: 700">코어</span>
+        <span style="padding: 4px 10px; border-radius: 999px; background: #FDECEA; color: #B42318; font-size: 12px; font-weight: 700">관절 부담 높음</span>
+        <span style="padding: 4px 10px; border-radius: 999px; background: #4DFFCF; color: #111111; font-size: 12px; font-weight: 800">5일 연속 달성</span>
+      </div>
+      <div style="padding: 12px; border-radius: 18px; background: #32B291; display: flex; justify-content: space-around">
+        <span style="width: 34px; height: 34px; border-radius: 50%; background: #111111; color: #4DFFCF; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">17</span>
+        <span style="width: 34px; height: 34px; border-radius: 50%; border: 1.5px dashed rgba(17, 17, 17, 0.5); box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #111111">16</span>
+        <span style="width: 34px; height: 34px; border-radius: 50%; background: #FFFFFF; color: #111111; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">21</span>
+        <span style="width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgba(17, 17, 17, 0.55)">22</span>
+      </div>
+      <span style="font-size: 11px; color: #5F5856; text-align: center">이번 주 줄: 완료 · 중단 · 오늘 · 앞으로</span>
+    </section>
+
+    <section style="padding: 22px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07); display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-size: 16px; font-weight: 800">반달가슴곰 표정</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 10px">
+        
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; overflow: hidden; background: #D8F7EE;">
+              <div style="position: absolute; left: 0; width: 160px; height: 160px; transform: scale(0.65); transform-origin: top left; top: 8px;">
+                <div style="width: 160px; height: 160px; font-family: 'Inter', 'Noto Sans KR', sans-serif; color: #151D19">
+  <svg width="160" height="160" viewBox="0 0 200 200" role="img" aria-label="웃는 반달가슴곰">
+    <g display="inline">
+      <path d="M14 200 C18 156 56 130 100 130 C144 130 182 156 186 200 Z" fill="#26221F"></path>
+      <path d="M52 170 Q76 150 100 174 Q124 150 148 170 Q124 164 100 190 Q76 164 52 170 Z" fill="#EFEAE0"></path>
+      <g display="none">
+        <ellipse cx="166" cy="128" rx="15" ry="36" fill="#26221F" transform="rotate(18 166 128)"></ellipse>
+        <circle cx="178" cy="94" r="16" fill="#26221F"></circle>
+        <ellipse cx="178" cy="98" rx="7.5" ry="5.5" fill="#6B5A4C"></ellipse>
+        <circle cx="171" cy="88" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="178" cy="85.5" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="185" cy="88" r="2.6" fill="#6B5A4C"></circle>
+      </g>
+      <g transform="rotate(0 100 100)">
+        <g transform="translate(0 0)">
+          <circle cx="50" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="51" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <g transform="translate(0 0)">
+          <circle cx="150" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="149" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <path d="M40 98 L27 107 L40 109 L31 120 L47 117 Z" fill="#26221F"></path>
+        <path d="M160 98 L173 107 L160 109 L169 120 L153 117 Z" fill="#26221F"></path>
+        <path d="M100 30 C142 30 166 58 164 96 C162 126 138 146 100 148 C62 146 38 126 36 96 C34 58 58 30 100 30 Z" fill="#26221F"></path>
+        <ellipse cx="100" cy="58" rx="34" ry="14" fill="#38322D" opacity="0.7"></ellipse>
+        <path d="M100 84 C118 84 130 98 130 114 C130 132 116 144 100 144 C84 144 70 132 70 114 C70 98 82 84 100 84 Z" fill="#B39373"></path>
+        <path d="M90 86 C94 80 106 80 110 86 L108 100 L92 100 Z" fill="#9C7D5F"></path>
+        <path d="M86 104 C86 95 114 95 114 104 C114 112 106 118 100 118 C94 118 86 112 86 104 Z" fill="#0F0D0C"></path>
+        <ellipse cx="94" cy="101" rx="4" ry="2" fill="#FFFFFF" opacity="0.35"></ellipse>
+        <path d="M100 118 L100 124" stroke="#3A2A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+        <circle cx="76" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="124" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="76" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="124" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="77.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+        <circle cx="125.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+
+        <g display="inline">
+          <path d="M86 124 C92 136 108 136 114 124 Z" fill="#3A1F1A"></path>
+          <ellipse cx="100" cy="131" rx="7" ry="3.2" fill="#C9706A"></ellipse>
+        </g>
+        <g display="none">
+          <path d="M67 77 L84 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M133 77 L116 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M88 133 Q100 125 112 133" fill="none" stroke="#3A2A20" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+        <g display="none">
+          <path d="M65 74 L87 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M135 74 L113 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M84 124 C90 138 110 138 116 124 Z" fill="#3A1F1A"></path>
+          <path d="M88 125 L91.5 131 L95 125 Z" fill="#EFEAE0"></path>
+          <path d="M105 125 L108.5 131 L112 125 Z" fill="#EFEAE0"></path>
+        </g>
+      </g>
+    </g>
+
+    <g display="none">
+      <line x1="6" y1="176" x2="194" y2="176" stroke="#CFC8BA" stroke-width="2" stroke-linecap="round"></line>
+      <path d="M72 176 C72 140 106 126 142 128 C174 130 190 150 190 176 Z" fill="#26221F"></path>
+      <path d="M96 160 Q108 150 120 162 Q108 157 96 166 Z" fill="#EFEAE0"></path>
+      <ellipse cx="62" cy="171" rx="26" ry="7" fill="#26221F"></ellipse>
+      <circle cx="50" cy="120" r="13" fill="#26221F"></circle>
+      <circle cx="51" cy="121" r="6" fill="#1A1715"></circle>
+      <circle cx="88" cy="114" r="13" fill="#26221F"></circle>
+      <circle cx="87" cy="115" r="6" fill="#1A1715"></circle>
+      <ellipse cx="72" cy="146" rx="40" ry="31" fill="#26221F"></ellipse>
+      <ellipse cx="42" cy="155" rx="21" ry="14" fill="#B39373"></ellipse>
+      <ellipse cx="25" cy="151" rx="7" ry="5.5" fill="#0F0D0C"></ellipse>
+      <path d="M56 140 Q63 145 70 140" fill="none" stroke="#8A7A6A" stroke-width="2.5" stroke-linecap="round"></path>
+      <text x="122" y="108" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#8C8676">z</text>
+      <text x="140" y="90" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="14" font-weight="700" fill="#B5AFA2">z</text>
+    </g>
+  </svg>
+</div>
+              </div>
+            </div>
+            <span style="font-size: 13px; font-weight: 800">기본</span>
+            <span style="font-size: 11px; color: #5F5856">G0 · 0~2일</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; overflow: hidden; background: #ECE7E6;">
+              <div style="position: absolute; left: 0; width: 160px; height: 160px; transform: scale(0.65); transform-origin: top left; top: 8px;">
+                <div style="width: 160px; height: 160px; font-family: 'Inter', 'Noto Sans KR', sans-serif; color: #151D19">
+  <svg width="160" height="160" viewBox="0 0 200 200" role="img" aria-label="시무룩한 반달가슴곰">
+    <g display="inline">
+      <path d="M14 200 C18 156 56 130 100 130 C144 130 182 156 186 200 Z" fill="#26221F"></path>
+      <path d="M52 170 Q76 150 100 174 Q124 150 148 170 Q124 164 100 190 Q76 164 52 170 Z" fill="#EFEAE0"></path>
+      <g display="none">
+        <ellipse cx="166" cy="128" rx="15" ry="36" fill="#26221F" transform="rotate(18 166 128)"></ellipse>
+        <circle cx="178" cy="94" r="16" fill="#26221F"></circle>
+        <ellipse cx="178" cy="98" rx="7.5" ry="5.5" fill="#6B5A4C"></ellipse>
+        <circle cx="171" cy="88" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="178" cy="85.5" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="185" cy="88" r="2.6" fill="#6B5A4C"></circle>
+      </g>
+      <g transform="rotate(-7 100 100) translate(0 4)">
+        <g transform="translate(-6 10)">
+          <circle cx="50" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="51" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <g transform="translate(6 10)">
+          <circle cx="150" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="149" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <path d="M40 98 L27 107 L40 109 L31 120 L47 117 Z" fill="#26221F"></path>
+        <path d="M160 98 L173 107 L160 109 L169 120 L153 117 Z" fill="#26221F"></path>
+        <path d="M100 30 C142 30 166 58 164 96 C162 126 138 146 100 148 C62 146 38 126 36 96 C34 58 58 30 100 30 Z" fill="#26221F"></path>
+        <ellipse cx="100" cy="58" rx="34" ry="14" fill="#38322D" opacity="0.7"></ellipse>
+        <path d="M100 84 C118 84 130 98 130 114 C130 132 116 144 100 144 C84 144 70 132 70 114 C70 98 82 84 100 84 Z" fill="#B39373"></path>
+        <path d="M90 86 C94 80 106 80 110 86 L108 100 L92 100 Z" fill="#9C7D5F"></path>
+        <path d="M86 104 C86 95 114 95 114 104 C114 112 106 118 100 118 C94 118 86 112 86 104 Z" fill="#0F0D0C"></path>
+        <ellipse cx="94" cy="101" rx="4" ry="2" fill="#FFFFFF" opacity="0.35"></ellipse>
+        <path d="M100 118 L100 124" stroke="#3A2A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+        <circle cx="76" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="124" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="76" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="124" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="77.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+        <circle cx="125.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+
+        <g display="none">
+          <path d="M86 124 C92 136 108 136 114 124 Z" fill="#3A1F1A"></path>
+          <ellipse cx="100" cy="131" rx="7" ry="3.2" fill="#C9706A"></ellipse>
+        </g>
+        <g display="inline">
+          <path d="M67 77 L84 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M133 77 L116 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M88 133 Q100 125 112 133" fill="none" stroke="#3A2A20" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+        <g display="none">
+          <path d="M65 74 L87 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M135 74 L113 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M84 124 C90 138 110 138 116 124 Z" fill="#3A1F1A"></path>
+          <path d="M88 125 L91.5 131 L95 125 Z" fill="#EFEAE0"></path>
+          <path d="M105 125 L108.5 131 L112 125 Z" fill="#EFEAE0"></path>
+        </g>
+      </g>
+    </g>
+
+    <g display="none">
+      <line x1="6" y1="176" x2="194" y2="176" stroke="#CFC8BA" stroke-width="2" stroke-linecap="round"></line>
+      <path d="M72 176 C72 140 106 126 142 128 C174 130 190 150 190 176 Z" fill="#26221F"></path>
+      <path d="M96 160 Q108 150 120 162 Q108 157 96 166 Z" fill="#EFEAE0"></path>
+      <ellipse cx="62" cy="171" rx="26" ry="7" fill="#26221F"></ellipse>
+      <circle cx="50" cy="120" r="13" fill="#26221F"></circle>
+      <circle cx="51" cy="121" r="6" fill="#1A1715"></circle>
+      <circle cx="88" cy="114" r="13" fill="#26221F"></circle>
+      <circle cx="87" cy="115" r="6" fill="#1A1715"></circle>
+      <ellipse cx="72" cy="146" rx="40" ry="31" fill="#26221F"></ellipse>
+      <ellipse cx="42" cy="155" rx="21" ry="14" fill="#B39373"></ellipse>
+      <ellipse cx="25" cy="151" rx="7" ry="5.5" fill="#0F0D0C"></ellipse>
+      <path d="M56 140 Q63 145 70 140" fill="none" stroke="#8A7A6A" stroke-width="2.5" stroke-linecap="round"></path>
+      <text x="122" y="108" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#8C8676">z</text>
+      <text x="140" y="90" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="14" font-weight="700" fill="#B5AFA2">z</text>
+    </g>
+  </svg>
+</div>
+              </div>
+            </div>
+            <span style="font-size: 13px; font-weight: 800">시무룩</span>
+            <span style="font-size: 11px; color: #5F5856">G1 · 3~6일</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; overflow: hidden; background: #FDECEA;">
+              <div style="position: absolute; left: 0; width: 160px; height: 160px; transform: scale(0.65); transform-origin: top left; top: 8px;">
+                <div style="width: 160px; height: 160px; font-family: 'Inter', 'Noto Sans KR', sans-serif; color: #151D19">
+  <svg width="160" height="160" viewBox="0 0 200 200" role="img" aria-label="이를 드러내고 화난 반달가슴곰">
+    <g display="inline">
+      <path d="M14 200 C18 156 56 130 100 130 C144 130 182 156 186 200 Z" fill="#26221F"></path>
+      <path d="M52 170 Q76 150 100 174 Q124 150 148 170 Q124 164 100 190 Q76 164 52 170 Z" fill="#EFEAE0"></path>
+      <g display="none">
+        <ellipse cx="166" cy="128" rx="15" ry="36" fill="#26221F" transform="rotate(18 166 128)"></ellipse>
+        <circle cx="178" cy="94" r="16" fill="#26221F"></circle>
+        <ellipse cx="178" cy="98" rx="7.5" ry="5.5" fill="#6B5A4C"></ellipse>
+        <circle cx="171" cy="88" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="178" cy="85.5" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="185" cy="88" r="2.6" fill="#6B5A4C"></circle>
+      </g>
+      <g transform="rotate(0 100 100)">
+        <g transform="translate(-4 6)">
+          <circle cx="50" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="51" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <g transform="translate(4 6)">
+          <circle cx="150" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="149" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <path d="M40 98 L27 107 L40 109 L31 120 L47 117 Z" fill="#26221F"></path>
+        <path d="M160 98 L173 107 L160 109 L169 120 L153 117 Z" fill="#26221F"></path>
+        <path d="M100 30 C142 30 166 58 164 96 C162 126 138 146 100 148 C62 146 38 126 36 96 C34 58 58 30 100 30 Z" fill="#26221F"></path>
+        <ellipse cx="100" cy="58" rx="34" ry="14" fill="#38322D" opacity="0.7"></ellipse>
+        <path d="M100 84 C118 84 130 98 130 114 C130 132 116 144 100 144 C84 144 70 132 70 114 C70 98 82 84 100 84 Z" fill="#B39373"></path>
+        <path d="M90 86 C94 80 106 80 110 86 L108 100 L92 100 Z" fill="#9C7D5F"></path>
+        <path d="M86 104 C86 95 114 95 114 104 C114 112 106 118 100 118 C94 118 86 112 86 104 Z" fill="#0F0D0C"></path>
+        <ellipse cx="94" cy="101" rx="4" ry="2" fill="#FFFFFF" opacity="0.35"></ellipse>
+        <path d="M100 118 L100 124" stroke="#3A2A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+        <circle cx="76" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="124" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="76" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="124" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="77.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+        <circle cx="125.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+
+        <g display="none">
+          <path d="M86 124 C92 136 108 136 114 124 Z" fill="#3A1F1A"></path>
+          <ellipse cx="100" cy="131" rx="7" ry="3.2" fill="#C9706A"></ellipse>
+        </g>
+        <g display="none">
+          <path d="M67 77 L84 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M133 77 L116 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M88 133 Q100 125 112 133" fill="none" stroke="#3A2A20" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+        <g display="inline">
+          <path d="M65 74 L87 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M135 74 L113 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M84 124 C90 138 110 138 116 124 Z" fill="#3A1F1A"></path>
+          <path d="M88 125 L91.5 131 L95 125 Z" fill="#EFEAE0"></path>
+          <path d="M105 125 L108.5 131 L112 125 Z" fill="#EFEAE0"></path>
+        </g>
+      </g>
+    </g>
+
+    <g display="none">
+      <line x1="6" y1="176" x2="194" y2="176" stroke="#CFC8BA" stroke-width="2" stroke-linecap="round"></line>
+      <path d="M72 176 C72 140 106 126 142 128 C174 130 190 150 190 176 Z" fill="#26221F"></path>
+      <path d="M96 160 Q108 150 120 162 Q108 157 96 166 Z" fill="#EFEAE0"></path>
+      <ellipse cx="62" cy="171" rx="26" ry="7" fill="#26221F"></ellipse>
+      <circle cx="50" cy="120" r="13" fill="#26221F"></circle>
+      <circle cx="51" cy="121" r="6" fill="#1A1715"></circle>
+      <circle cx="88" cy="114" r="13" fill="#26221F"></circle>
+      <circle cx="87" cy="115" r="6" fill="#1A1715"></circle>
+      <ellipse cx="72" cy="146" rx="40" ry="31" fill="#26221F"></ellipse>
+      <ellipse cx="42" cy="155" rx="21" ry="14" fill="#B39373"></ellipse>
+      <ellipse cx="25" cy="151" rx="7" ry="5.5" fill="#0F0D0C"></ellipse>
+      <path d="M56 140 Q63 145 70 140" fill="none" stroke="#8A7A6A" stroke-width="2.5" stroke-linecap="round"></path>
+      <text x="122" y="108" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#8C8676">z</text>
+      <text x="140" y="90" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="14" font-weight="700" fill="#B5AFA2">z</text>
+    </g>
+  </svg>
+</div>
+              </div>
+            </div>
+            <span style="font-size: 13px; font-weight: 800">화남</span>
+            <span style="font-size: 11px; color: #5F5856">G2 · 7~13일</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; overflow: hidden; background: #E6E1E0;">
+              <div style="position: absolute; left: 0; width: 160px; height: 160px; transform: scale(0.65); transform-origin: top left; top: -21px;">
+                <div style="width: 160px; height: 160px; font-family: 'Inter', 'Noto Sans KR', sans-serif; color: #151D19">
+  <svg width="160" height="160" viewBox="0 0 200 200" role="img" aria-label="엎드려 잠든 반달가슴곰">
+    <g display="none">
+      <path d="M14 200 C18 156 56 130 100 130 C144 130 182 156 186 200 Z" fill="#26221F"></path>
+      <path d="M52 170 Q76 150 100 174 Q124 150 148 170 Q124 164 100 190 Q76 164 52 170 Z" fill="#EFEAE0"></path>
+      <g display="none">
+        <ellipse cx="166" cy="128" rx="15" ry="36" fill="#26221F" transform="rotate(18 166 128)"></ellipse>
+        <circle cx="178" cy="94" r="16" fill="#26221F"></circle>
+        <ellipse cx="178" cy="98" rx="7.5" ry="5.5" fill="#6B5A4C"></ellipse>
+        <circle cx="171" cy="88" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="178" cy="85.5" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="185" cy="88" r="2.6" fill="#6B5A4C"></circle>
+      </g>
+      <g transform="rotate(0 100 100)">
+        <g transform="translate(0 0)">
+          <circle cx="50" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="51" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <g transform="translate(0 0)">
+          <circle cx="150" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="149" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <path d="M40 98 L27 107 L40 109 L31 120 L47 117 Z" fill="#26221F"></path>
+        <path d="M160 98 L173 107 L160 109 L169 120 L153 117 Z" fill="#26221F"></path>
+        <path d="M100 30 C142 30 166 58 164 96 C162 126 138 146 100 148 C62 146 38 126 36 96 C34 58 58 30 100 30 Z" fill="#26221F"></path>
+        <ellipse cx="100" cy="58" rx="34" ry="14" fill="#38322D" opacity="0.7"></ellipse>
+        <path d="M100 84 C118 84 130 98 130 114 C130 132 116 144 100 144 C84 144 70 132 70 114 C70 98 82 84 100 84 Z" fill="#B39373"></path>
+        <path d="M90 86 C94 80 106 80 110 86 L108 100 L92 100 Z" fill="#9C7D5F"></path>
+        <path d="M86 104 C86 95 114 95 114 104 C114 112 106 118 100 118 C94 118 86 112 86 104 Z" fill="#0F0D0C"></path>
+        <ellipse cx="94" cy="101" rx="4" ry="2" fill="#FFFFFF" opacity="0.35"></ellipse>
+        <path d="M100 118 L100 124" stroke="#3A2A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+        <circle cx="76" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="124" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="76" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="124" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="77.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+        <circle cx="125.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+
+        <g display="none">
+          <path d="M86 124 C92 136 108 136 114 124 Z" fill="#3A1F1A"></path>
+          <ellipse cx="100" cy="131" rx="7" ry="3.2" fill="#C9706A"></ellipse>
+        </g>
+        <g display="none">
+          <path d="M67 77 L84 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M133 77 L116 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M88 133 Q100 125 112 133" fill="none" stroke="#3A2A20" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+        <g display="none">
+          <path d="M65 74 L87 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M135 74 L113 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M84 124 C90 138 110 138 116 124 Z" fill="#3A1F1A"></path>
+          <path d="M88 125 L91.5 131 L95 125 Z" fill="#EFEAE0"></path>
+          <path d="M105 125 L108.5 131 L112 125 Z" fill="#EFEAE0"></path>
+        </g>
+      </g>
+    </g>
+
+    <g display="inline">
+      <line x1="6" y1="176" x2="194" y2="176" stroke="#CFC8BA" stroke-width="2" stroke-linecap="round"></line>
+      <path d="M72 176 C72 140 106 126 142 128 C174 130 190 150 190 176 Z" fill="#26221F"></path>
+      <path d="M96 160 Q108 150 120 162 Q108 157 96 166 Z" fill="#EFEAE0"></path>
+      <ellipse cx="62" cy="171" rx="26" ry="7" fill="#26221F"></ellipse>
+      <circle cx="50" cy="120" r="13" fill="#26221F"></circle>
+      <circle cx="51" cy="121" r="6" fill="#1A1715"></circle>
+      <circle cx="88" cy="114" r="13" fill="#26221F"></circle>
+      <circle cx="87" cy="115" r="6" fill="#1A1715"></circle>
+      <ellipse cx="72" cy="146" rx="40" ry="31" fill="#26221F"></ellipse>
+      <ellipse cx="42" cy="155" rx="21" ry="14" fill="#B39373"></ellipse>
+      <ellipse cx="25" cy="151" rx="7" ry="5.5" fill="#0F0D0C"></ellipse>
+      <path d="M56 140 Q63 145 70 140" fill="none" stroke="#8A7A6A" stroke-width="2.5" stroke-linecap="round"></path>
+      <text x="122" y="108" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#8C8676">z</text>
+      <text x="140" y="90" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="14" font-weight="700" fill="#B5AFA2">z</text>
+    </g>
+  </svg>
+</div>
+              </div>
+            </div>
+            <span style="font-size: 13px; font-weight: 800">쓰러짐</span>
+            <span style="font-size: 11px; color: #5F5856">G3 · 14일 이상</span>
+          </div>
+        
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="position: relative; width: 104px; height: 104px; border-radius: 50%; overflow: hidden; background: #4DFFCF;">
+              <div style="position: absolute; left: 0; width: 160px; height: 160px; transform: scale(0.65); transform-origin: top left; top: 8px;">
+                <div style="width: 160px; height: 160px; font-family: 'Inter', 'Noto Sans KR', sans-serif; color: #151D19">
+  <svg width="160" height="160" viewBox="0 0 200 200" role="img" aria-label="앞발을 들어 기뻐하는 반달가슴곰">
+    <g display="inline">
+      <path d="M14 200 C18 156 56 130 100 130 C144 130 182 156 186 200 Z" fill="#26221F"></path>
+      <path d="M52 170 Q76 150 100 174 Q124 150 148 170 Q124 164 100 190 Q76 164 52 170 Z" fill="#EFEAE0"></path>
+      <g display="inline">
+        <ellipse cx="166" cy="128" rx="15" ry="36" fill="#26221F" transform="rotate(18 166 128)"></ellipse>
+        <circle cx="178" cy="94" r="16" fill="#26221F"></circle>
+        <ellipse cx="178" cy="98" rx="7.5" ry="5.5" fill="#6B5A4C"></ellipse>
+        <circle cx="171" cy="88" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="178" cy="85.5" r="2.6" fill="#6B5A4C"></circle>
+        <circle cx="185" cy="88" r="2.6" fill="#6B5A4C"></circle>
+      </g>
+      <g transform="rotate(0 100 100)">
+        <g transform="translate(0 0)">
+          <circle cx="50" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="51" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <g transform="translate(0 0)">
+          <circle cx="150" cy="50" r="20" fill="#26221F"></circle>
+          <circle cx="149" cy="52" r="10" fill="#1A1715"></circle>
+        </g>
+        <path d="M40 98 L27 107 L40 109 L31 120 L47 117 Z" fill="#26221F"></path>
+        <path d="M160 98 L173 107 L160 109 L169 120 L153 117 Z" fill="#26221F"></path>
+        <path d="M100 30 C142 30 166 58 164 96 C162 126 138 146 100 148 C62 146 38 126 36 96 C34 58 58 30 100 30 Z" fill="#26221F"></path>
+        <ellipse cx="100" cy="58" rx="34" ry="14" fill="#38322D" opacity="0.7"></ellipse>
+        <path d="M100 84 C118 84 130 98 130 114 C130 132 116 144 100 144 C84 144 70 132 70 114 C70 98 82 84 100 84 Z" fill="#B39373"></path>
+        <path d="M90 86 C94 80 106 80 110 86 L108 100 L92 100 Z" fill="#9C7D5F"></path>
+        <path d="M86 104 C86 95 114 95 114 104 C114 112 106 118 100 118 C94 118 86 112 86 104 Z" fill="#0F0D0C"></path>
+        <ellipse cx="94" cy="101" rx="4" ry="2" fill="#FFFFFF" opacity="0.35"></ellipse>
+        <path d="M100 118 L100 124" stroke="#3A2A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+        <circle cx="76" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="124" cy="86" r="7" fill="#3B3530"></circle>
+        <circle cx="76" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="124" cy="86" r="4.5" fill="#0F0D0C"></circle>
+        <circle cx="77.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+        <circle cx="125.6" cy="84.4" r="1.5" fill="#FFFFFF"></circle>
+
+        <g display="inline">
+          <path d="M86 124 C92 136 108 136 114 124 Z" fill="#3A1F1A"></path>
+          <ellipse cx="100" cy="131" rx="7" ry="3.2" fill="#C9706A"></ellipse>
+        </g>
+        <g display="none">
+          <path d="M67 77 L84 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M133 77 L116 72" stroke="#6A5C50" stroke-width="3.5" stroke-linecap="round"></path>
+          <path d="M88 133 Q100 125 112 133" fill="none" stroke="#3A2A20" stroke-width="3" stroke-linecap="round"></path>
+        </g>
+        <g display="none">
+          <path d="M65 74 L87 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M135 74 L113 82" stroke="#7A6A5C" stroke-width="4" stroke-linecap="round"></path>
+          <path d="M84 124 C90 138 110 138 116 124 Z" fill="#3A1F1A"></path>
+          <path d="M88 125 L91.5 131 L95 125 Z" fill="#EFEAE0"></path>
+          <path d="M105 125 L108.5 131 L112 125 Z" fill="#EFEAE0"></path>
+        </g>
+      </g>
+    </g>
+
+    <g display="none">
+      <line x1="6" y1="176" x2="194" y2="176" stroke="#CFC8BA" stroke-width="2" stroke-linecap="round"></line>
+      <path d="M72 176 C72 140 106 126 142 128 C174 130 190 150 190 176 Z" fill="#26221F"></path>
+      <path d="M96 160 Q108 150 120 162 Q108 157 96 166 Z" fill="#EFEAE0"></path>
+      <ellipse cx="62" cy="171" rx="26" ry="7" fill="#26221F"></ellipse>
+      <circle cx="50" cy="120" r="13" fill="#26221F"></circle>
+      <circle cx="51" cy="121" r="6" fill="#1A1715"></circle>
+      <circle cx="88" cy="114" r="13" fill="#26221F"></circle>
+      <circle cx="87" cy="115" r="6" fill="#1A1715"></circle>
+      <ellipse cx="72" cy="146" rx="40" ry="31" fill="#26221F"></ellipse>
+      <ellipse cx="42" cy="155" rx="21" ry="14" fill="#B39373"></ellipse>
+      <ellipse cx="25" cy="151" rx="7" ry="5.5" fill="#0F0D0C"></ellipse>
+      <path d="M56 140 Q63 145 70 140" fill="none" stroke="#8A7A6A" stroke-width="2.5" stroke-linecap="round"></path>
+      <text x="122" y="108" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="#8C8676">z</text>
+      <text x="140" y="90" font-family="'Inter', 'Noto Sans KR', sans-serif" font-size="14" font-weight="700" fill="#B5AFA2">z</text>
+    </g>
+  </svg>
+</div>
+              </div>
+            </div>
+            <span style="font-size: 13px; font-weight: 800">응원</span>
+            <span style="font-size: 11px; color: #5F5856">운동 완료</span>
+          </div>
+        
+      </div>
+      <p style="margin: auto 0 0; padding: 10px 12px; border-radius: 14px; background: #F0EBEA; font-size: 12px; line-height: 1.5; color: #3B3533">곰은 홈 요약 카드 오른쪽의 연한 원 안에 둡니다. 원 색은 상태에 따라 연한 민트, 회색, 연한 빨강으로 바뀝니다.</p>
+    </section>
+  </div>
+</div>
+</body>
+</html>

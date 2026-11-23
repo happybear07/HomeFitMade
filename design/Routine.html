@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S3 루틴 추천 · 홈핏 메이트 화면 설계</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1C7460}
+</style>
+<style>body{margin:0;min-height:100vh;background:#E4DEDC;display:flex;justify-content:center;align-items:flex-start;padding:24px 0;box-sizing:border-box}body>div{box-shadow:0 12px 40px rgba(17,17,17,.12)}</style>
+</head>
+<body>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F0EBEA; color: #111111; font-family: 'Inter', 'Noto Sans KR', sans-serif; letter-spacing: -0.01em; display: flex; flex-direction: column; overflow: hidden">
+  <header style="height: 56px; display: flex; align-items: center; padding: 8px 10px 0">
+    <a href="Main.html" aria-label="뒤로" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #111111">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+    </a>
+  </header>
+
+  <section style="padding: 4px 20px 0; display: flex; flex-direction: column; gap: 12px">
+    <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.03em">오늘의 루틴</h1>
+    <div style="display: flex; gap: 6px">
+      <span style="padding: 6px 12px; border-radius: 999px; background: #D8F7EE; color: #1C7460; font-size: 13px; font-weight: 700">중급</span>
+      <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(17, 17, 17, 0.08); font-size: 13px; font-weight: 600">운동 5개</span>
+      <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(17, 17, 17, 0.08); font-size: 13px; font-weight: 600">약 23분</span>
+    </div>
+  </section>
+
+  <div role="group" aria-label="운동 부위" style="margin: 16px 20px 0; padding: 4px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 6px 18px rgba(17, 17, 17, 0.06); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px">
+    <button type="button" aria-pressed="true" style="height: 44px; border: 0; border-radius: 14px; background: #111111; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700">전신</button>
+    <button type="button" aria-pressed="false" style="height: 44px; border: 0; border-radius: 14px; background: transparent; color: #5F5856; font-family: inherit; font-size: 14px; font-weight: 500">상체</button>
+    <button type="button" aria-pressed="false" style="height: 44px; border: 0; border-radius: 14px; background: transparent; color: #5F5856; font-family: inherit; font-size: 14px; font-weight: 500">하체</button>
+    <button type="button" aria-pressed="false" style="height: 44px; border: 0; border-radius: 14px; background: transparent; color: #5F5856; font-family: inherit; font-size: 14px; font-weight: 500">코어</button>
+  </div>
+
+  <p style="margin: 12px 20px 0; display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 14px; background: #D8F7EE; color: #1C7460; font-size: 13px; font-weight: 600">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path></svg>
+    최근 2번 모두 끝까지 해서 횟수를 10% 늘렸어요
+  </p>
+
+  <ol style="list-style: none; margin: 12px 20px 0; padding: 2px 16px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07)">
+    
+      <li style="display: flex; align-items: center; gap: 12px; padding: 12px 0;">
+        <span style="position: relative; flex: none; width: 52px; height: 52px; border-radius: 16px; background: #F6E9E3; display: flex; align-items: center; justify-content: center">
+          <span style="width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.12)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#A8735C" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+          </span>
+        </span>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.02em">푸시업</span>
+          <span style="font-size: 13px; color: #5F5856">상체</span>
+          
+        </div>
+        <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap">17회 × 3세트</span>
+      </li>
+    
+      <li style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #E8E2E0;">
+        <span style="position: relative; flex: none; width: 52px; height: 52px; border-radius: 16px; background: #F6E9E3; display: flex; align-items: center; justify-content: center">
+          <span style="width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.12)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#A8735C" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+          </span>
+        </span>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.02em">의자 딥스</span>
+          <span style="font-size: 13px; color: #5F5856">상체</span>
+          
+        </div>
+        <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap">17회 × 3세트</span>
+      </li>
+    
+      <li style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #E8E2E0;">
+        <span style="position: relative; flex: none; width: 52px; height: 52px; border-radius: 16px; background: #D8F7EE; display: flex; align-items: center; justify-content: center">
+          <span style="width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.12)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#1C7460" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+          </span>
+        </span>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.02em">점프 스쿼트</span>
+          <span style="font-size: 13px; color: #5F5856">하체</span>
+          
+            <span style="align-self: flex-start; padding: 2px 8px; border-radius: 999px; background: #FDECEA; color: #B42318; font-size: 12px; font-weight: 700">관절 부담 높음</span>
+          
+        </div>
+        <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap">6회 × 3세트</span>
+      </li>
+    
+      <li style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #E8E2E0;">
+        <span style="position: relative; flex: none; width: 52px; height: 52px; border-radius: 16px; background: #D8F7EE; display: flex; align-items: center; justify-content: center">
+          <span style="width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.12)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#1C7460" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+          </span>
+        </span>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.02em">리버스 런지</span>
+          <span style="font-size: 13px; color: #5F5856">하체</span>
+          
+        </div>
+        <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap">17회 × 3세트</span>
+      </li>
+    
+      <li style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #E8E2E0;">
+        <span style="position: relative; flex: none; width: 52px; height: 52px; border-radius: 16px; background: #ECE7E6; display: flex; align-items: center; justify-content: center">
+          <span style="width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.12)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#111111" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+          </span>
+        </span>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.02em">버드독</span>
+          <span style="font-size: 13px; color: #5F5856">코어</span>
+          
+        </div>
+        <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap">17회 × 3세트</span>
+      </li>
+    
+  </ol>
+
+  <div style="margin-top: auto; padding: 12px 20px 14px; border-radius: 24px 24px 0 0; background: #FFFFFF; box-shadow: 0 -6px 24px rgba(17, 17, 17, 0.07)">
+    <a href="Workout.html" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 16px; background: #4DFFCF; color: #111111; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 22px rgba(50, 178, 145, 0.35)">시작하기</a>
+    <p style="margin: 10px 0 0; font-size: 11px; line-height: 1.5; color: #5F5856; text-align: center">본 프로그램의 추천은 일반적인 운동 안내이며 의학적 조언을 대신하지 않습니다.</p>
+  </div>
+</div>
+</body>
+</html>

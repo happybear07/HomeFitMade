@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S1 정보 입력 · 홈핏 메이트 화면 설계</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1C7460}
+</style>
+<style>body{margin:0;min-height:100vh;background:#E4DEDC;display:flex;justify-content:center;align-items:flex-start;padding:24px 0;box-sizing:border-box}body>div{box-shadow:0 12px 40px rgba(17,17,17,.12)}</style>
+</head>
+<body>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F0EBEA; color: #111111; font-family: 'Inter', 'Noto Sans KR', sans-serif; letter-spacing: -0.01em; display: flex; flex-direction: column; overflow: hidden">
+  <header style="height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 8px 10px 0">
+    <a href="Main.html" aria-label="뒤로" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #111111">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+    </a>
+    <a href="Admin.html" style="display: flex; align-items: center; min-height: 44px; padding: 0 10px; font-size: 14px; font-weight: 600; color: #5F5856; text-decoration: none">관리자</a>
+  </header>
+  <section style="padding: 4px 20px 0">
+    <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.03em">내 정보</h1>
+    <p style="margin: 6px 0 0; font-size: 14px; color: #5F5856">한 번 입력하면 설정에서 언제든 바꿀 수 있어요</p>
+  </section>
+
+  <form style="flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 20px 20px 0">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+        <label style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 20px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 6px 18px rgba(17, 17, 17, 0.06)">
+          <span style="font-size: 13px; font-weight: 600; color: #5F5856">키</span>
+          <span style="display: flex; align-items: baseline; gap: 4px">
+            <input type="number" value="175" style="width: 100%; min-width: 0; border: 0; padding: 0; background: transparent; color: #111111; font-family: inherit; font-size: 26px; font-weight: 800; letter-spacing: -0.03em">
+            <span style="font-size: 14px; color: #5F5856">cm</span>
+          </span>
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 6px; padding: 12.5px 14.5px; border-radius: 20px; background: #FFFFFF; border: 1.5px solid #B42318; box-shadow: 0 6px 18px rgba(180, 35, 24, 0.08)">
+          <span style="font-size: 13px; font-weight: 600; color: #5F5856">몸무게</span>
+          <span style="display: flex; align-items: baseline; gap: 4px">
+            <input type="number" value="700" aria-invalid="true" aria-describedby="w-err" style="width: 100%; min-width: 0; border: 0; padding: 0; background: transparent; color: #111111; font-family: inherit; font-size: 26px; font-weight: 800; letter-spacing: -0.03em">
+            <span style="font-size: 14px; color: #5F5856">kg</span>
+          </span>
+        </label>
+      </div>
+      <span id="w-err" style="align-self: flex-end; font-size: 12px; font-weight: 600; color: #B42318">몸무게는 20~300kg 사이로 입력해 주세요</span>
+    </div>
+
+    <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+      <legend style="padding: 0; margin-bottom: 8px; font-size: 15px; font-weight: 800; letter-spacing: -0.02em">운동 경험</legend>
+      <div style="padding: 4px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 6px 18px rgba(17, 17, 17, 0.06); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px">
+        <label style="height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: #5F5856; font-size: 15px; font-weight: 500"><input type="radio" name="lv" style="position: absolute; opacity: 0; width: 1px; height: 1px">초급</label>
+        <label style="height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: #111111; color: #FFFFFF; font-size: 15px; font-weight: 700"><input type="radio" name="lv" checked style="position: absolute; opacity: 0; width: 1px; height: 1px">중급</label>
+        <label style="height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: #5F5856; font-size: 15px; font-weight: 500"><input type="radio" name="lv" style="position: absolute; opacity: 0; width: 1px; height: 1px">고급</label>
+      </div>
+      <span style="font-size: 13px; color: #5F5856">6개월쯤 꾸준히 운동해 왔어요</span>
+    </fieldset>
+
+    <section style="padding: 16px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 8px 24px rgba(17, 17, 17, 0.07); display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div style="display: flex; align-items: baseline; gap: 8px">
+          <span style="font-size: 13px; font-weight: 600; color: #5F5856">BMI</span>
+          <span style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums">22.9</span>
+        </div>
+        <span style="padding: 5px 12px; border-radius: 999px; background: #D8F7EE; color: #1C7460; font-size: 13px; font-weight: 700">정상</span>
+      </div>
+      <div style="position: relative; padding-top: 10px">
+        <div style="display: grid; grid-template-columns: 18.5fr 4.5fr 2fr 5fr 5fr; gap: 3px; height: 8px">
+          <span style="border-radius: 4px; background: #E3DDDB"></span>
+          <span style="border-radius: 4px; background: #1C7460"></span>
+          <span style="border-radius: 4px; background: #E3DDDB"></span>
+          <span style="border-radius: 4px; background: #E3DDDB"></span>
+          <span style="border-radius: 4px; background: #E3DDDB"></span>
+        </div>
+        <span aria-hidden="true" style="position: absolute; top: 0; left: 66%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: #FFFFFF; border: 3px solid #1C7460; box-sizing: border-box; box-shadow: 0 2px 6px rgba(17, 17, 17, 0.2); transform: translateY(5px)"></span>
+        <div style="display: grid; grid-template-columns: 18.5fr 4.5fr 2fr 5fr 5fr; gap: 3px; margin-top: 8px; font-size: 11px; color: #5F5856; font-variant-numeric: tabular-nums">
+          <span style="text-align: right">18.5</span><span style="text-align: right">23</span><span style="text-align: right">25</span><span style="text-align: right">30</span><span></span>
+        </div>
+      </div>
+      <span style="font-size: 12px; line-height: 1.5; color: #5F5856">BMI는 근육량을 구분하지 못해 참고로만 써요 · 기준 대한비만학회</span>
+    </section>
+
+    <p style="margin: 0; display: flex; gap: 8px; font-size: 12px; line-height: 1.5; color: #5F5856">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 1px"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+      <span>질환이 있거나 통증이 있으면 운동 전에 의사와 상담하세요.</span>
+    </p>
+  </form>
+
+  <div style="padding: 12px 20px 14px; border-radius: 24px 24px 0 0; background: #FFFFFF; box-shadow: 0 -6px 24px rgba(17, 17, 17, 0.07)">
+    <a href="Main.html" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 16px; background: #4DFFCF; color: #111111; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 22px rgba(50, 178, 145, 0.35)">저장하기</a>
+    <p style="margin: 10px 0 0; font-size: 11px; line-height: 1.5; color: #5F5856; text-align: center">본 프로그램의 추천은 일반적인 운동 안내이며 의학적 조언을 대신하지 않습니다.</p>
+  </div>
+</div>
+</body>
+</html>

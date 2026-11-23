@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S4 운동 진행 · 홈핏 메이트 화면 설계</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1C7460}
+</style>
+<style>body{margin:0;min-height:100vh;background:#E4DEDC;display:flex;justify-content:center;align-items:flex-start;padding:24px 0;box-sizing:border-box}body>div{box-shadow:0 12px 40px rgba(17,17,17,.12)}</style>
+</head>
+<body>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #111111; color: #111111; font-family: 'Inter', 'Noto Sans KR', sans-serif; letter-spacing: -0.01em; display: flex; flex-direction: column; overflow: hidden">
+  <header style="display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; padding: 16px 10px 0">
+    <a href="Main.html" aria-label="그만하기" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #FFFFFF">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </a>
+    <span style="text-align: center; font-size: 14px; font-weight: 600; color: #FFFFFF; font-variant-numeric: tabular-nums">1 / 5</span>
+    <span></span>
+  </header>
+  <div role="progressbar" aria-label="루틴 진행: 5개 중 1번째 운동" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="margin: 6px 20px 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px">
+    <span style="height: 4px; border-radius: 2px; background: linear-gradient(90deg, #4DFFCF 55%, rgba(255, 255, 255, 0.18) 55%)"></span>
+    <span style="height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.18)"></span>
+    <span style="height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.18)"></span>
+    <span style="height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.18)"></span>
+    <span style="height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.18)"></span>
+  </div>
+
+  <div style="position: relative; margin: 14px 20px 0; height: 212px; border-radius: 24px; background: linear-gradient(160deg, #2A2A2A, #161616); display: flex; align-items: center; justify-content: center">
+    <button type="button" aria-label="시범 영상 재생" style="width: 64px; height: 64px; border-radius: 50%; border: 0; background: #4DFFCF; color: #111111; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35); cursor: pointer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+    </button>
+    <span style="position: absolute; left: 16px; bottom: 14px; font-size: 12px; font-weight: 500; color: rgba(255, 255, 255, 0.8)">시범 영상</span>
+  </div>
+
+  <main style="flex: 1; margin-top: 20px; padding: 10px 20px 0; border-radius: 32px 32px 0 0; background: #FFFFFF; box-shadow: 0 -10px 32px rgba(0, 0, 0, 0.25); display: flex; flex-direction: column">
+    <span aria-hidden="true" style="align-self: center; width: 40px; height: 4px; border-radius: 2px; background: #D6D0CE"></span>
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px">
+      <h1 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em">푸시업</h1>
+      <span style="padding: 6px 12px; border-radius: 999px; background: #D8F7EE; color: #1C7460; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums">세트 2 / 3</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 6px; margin-top: 6px">
+      <span style="font-size: 88px; font-weight: 800; line-height: 1; letter-spacing: -0.05em; color: #1C7460; font-variant-numeric: tabular-nums">17</span>
+      <span style="font-size: 22px; font-weight: 700">회</span>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 15px; line-height: 1.65; color: #3B3533">손은 어깨너비로 짚고 몸을 일직선으로 유지한 채, 가슴이 바닥 가까이 갈 때까지 내려갔다 올라와요.</p>
+    <p style="margin: 12px 0 0; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px; background: #FDECEA; color: #B42318; font-size: 13px; font-weight: 600">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+      허리가 처지거나 엉덩이가 들리지 않게 해요
+    </p>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 2px">
+      <a href="Rest.html" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 16px; background: #4DFFCF; color: #111111; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 22px rgba(50, 178, 145, 0.35)">세트 완료</a>
+      <a href="Rest.html" style="align-self: center; padding: 12px; font-size: 14px; font-weight: 600; color: #5F5856; text-decoration: none">이 운동 건너뛰기</a>
+      <p style="margin: 0 0 14px; font-size: 11px; line-height: 1.5; color: #5F5856; text-align: center">본 프로그램의 추천은 일반적인 운동 안내이며 의학적 조언을 대신하지 않습니다.</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>

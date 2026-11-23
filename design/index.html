@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홈핏 메이트 화면 설계</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F0EBEA;color:#111;font-family:'Inter','Noto Sans KR',sans-serif;padding:32px 16px}
+header{max-width:1280px;margin:0 auto 24px}h1{margin:0;font-size:26px;font-weight:800}header p{margin:6px 0 0;color:#5F5856;font-size:14px;line-height:1.6}
+main{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:#fff;border-radius:24px;padding:16px;box-shadow:0 1px 2px rgba(17,17,17,.04),0 8px 24px rgba(17,17,17,.07)}
+.card h2{margin:0 0 12px;font-size:15px;font-weight:800;color:#1C7460}.card a{text-decoration:none}
+.frame{overflow:hidden;border-radius:12px;background:#E4DEDC;max-width:100%}.frame iframe{border:0;display:block;pointer-events:none;margin-top:-24px}
+.card p{margin:12px 0 0;font-size:12.5px;line-height:1.6;color:#5F5856}
+</style>
+</head>
+<body>
+<header><h1>홈핏 메이트 화면 설계</h1>
+<p>흐름: 정보 입력 → 홈 → 루틴 추천 → 운동 진행 → 휴식 → 완료. 화면 ID(S1~S7)와 기능 ID(A-1, C-3 등)는 기능명세서 v0.1과 같습니다.<br>
+제목을 누르면 화면이 실제 크기로 열리고, 화면 속 버튼으로 다른 화면으로 이동할 수 있습니다. 숫자는 예시 데이터입니다. 색은 팔레트 03 민트 클레이입니다.</p></header>
+<main>
+<article class="card"><a href="StyleGuide.html"><h2>디자인 시스템 v0.6</h2></a>
+<div class="frame" style="width:300px;height:214px"><iframe src="StyleGuide.html#" title="디자인 시스템 v0.6" loading="lazy" style="width:1260px;height:948px;transform:scale(0.23809523809523808);transform-origin:0 0" scrolling="no"></iframe></div></article>
+<article class="card"><a href="Setup.html"><h2>S1 정보 입력</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Setup.html#" title="S1 정보 입력" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S1 정보 입력 (홈의 설정 버튼으로도 열림)<br>A-1 입력 · A-2 검증(몸무게 칸은 오류 상태 예시) · A-3 BMI와 한국 기준 막대 · A-5 다시 열어 수정 · A-6 BMI 참고 안내 · SR-2 건강 안내<br>난이도 설명은 ACSM 2009의 초보·중급·고급 정의를 따름</p></article>
+<article class="card"><a href="Main.html"><h2>S2 홈 · G0 기본 (0~2일)</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Main.html#" title="S2 홈 · G0 기본 (0~2일)" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S2 홈 G0 (마지막 운동 후 0~2일)<br>틸 헤더의 이번 주 줄: 검정 = 완료, 점선 = 중단, 흰색 = 오늘 · E-2 연속 일수 · F-1~F-3 공백 단계<br>가운데 재생 버튼 = 오늘의 루틴 시작 · state 속성으로 G0~G3 전환</p></article>
+<article class="card"><a href="Routine.html"><h2>S3 루틴 추천</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Routine.html#" title="S3 루틴 추천" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S3 루틴 추천<br>C-1~C-5 추천 결과와 예상 시간 · C-7 부위 선택(알약형) · C-3 관절 부담 표시(BMI 25 이상이면 대체 운동으로 바뀜) · H-1, H-3 자동 조정 안내<br>왼쪽 썸네일은 시범 영상 자리</p></article>
+<article class="card"><a href="Workout.html"><h2>S4 운동 진행</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Workout.html#" title="S4 운동 진행" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S4 운동 진행 (어두운 영상 영역 + 흰 시트)<br>D-1 시범 영상 · D-2 영상이 없으면 '영상 준비 중'과 설명만 표시 · D-3 세트·횟수 · D-4 X 버튼 = 그만하기, 건너뛰기 · SR-4 주의사항</p></article>
+<article class="card"><a href="Rest.html"><h2>S4 운동 진행 · 휴식</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Rest.html#" title="S4 운동 진행 · 휴식" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S4 휴식 (틸 영역 + 흰 시트)<br>D-5 휴식 타이머 · 시간형 운동(플랭크 등)은 운동 타이머가 끝나면 자동으로 이 화면으로 넘어옴</p></article>
+<article class="card"><a href="Complete.html"><h2>S5 완료</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Complete.html#" title="S5 완료" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S5 완료<br>E-1 기록 저장 · E-2 연속 일수 · E-4 칼로리(MET 기반, 휴식 제외 추정) · F-4 홈이 기본 상태로 돌아옴<br>'오늘 운동은 어땠나요?' 3단계는 기능명세서 I-3(선택) 시안</p></article>
+<article class="card"><a href="HomeG1.html"><h2>S2 홈 · G1 시무룩 (3~6일)</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="HomeG1.html#" title="S2 홈 · G1 시무룩 (3~6일)" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>G1 시무룩 (3~6일)<br>Main을 state=g1로 불러옴 · F-3 화면 채도 낮춤 (CSS filter: saturate)</p></article>
+<article class="card"><a href="HomeG2.html"><h2>S2 홈 · G2 화남 (7~13일)</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="HomeG2.html#" title="S2 홈 · G2 화남 (7~13일)" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>G2 화남 (7~13일)<br>Main을 state=g2로 불러옴 · F-3 상단 경고 배너</p></article>
+<article class="card"><a href="HomeG3.html"><h2>S2 홈 · G3 쓰러짐 (14일 이상)</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="HomeG3.html#" title="S2 홈 · G3 쓰러짐 (14일 이상)" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>G3 쓰러짐 (14일 이상)<br>Main을 state=g3로 불러옴 · F-3 화면 전체 흑백 (CSS filter: grayscale) · F-4 루틴을 끝내면 G0로 복귀</p></article>
+<article class="card"><a href="Records.html"><h2>S6 운동 기록</h2></a>
+<div class="frame" style="width:300px;height:1015px"><iframe src="Records.html#" title="S6 운동 기록" loading="lazy" style="width:390px;height:1368px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S6 운동 기록<br>E-5 달력과 목록 · 완료·중단 구분<br>'부위별 운동량' 도넛은 레퍼런스에서 가져온 제안이라 명세서에는 없음(빼도 됨)</p></article>
+<article class="card"><a href="Admin.html"><h2>S7 관리자 · 시범 영상</h2></a>
+<div class="frame" style="width:300px;height:649px"><iframe src="Admin.html#" title="S7 관리자 · 시범 영상" loading="lazy" style="width:390px;height:892px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div><p>S7 관리자 (S1 오른쪽 위 '관리자'에서 진입)<br>G-1 등록 현황 · G-2 업로드 · G-3 형식·용량 오류(오류 상태 예시)</p></article>
+<article class="card"><a href="Bear.html"><h2>곰 마스코트 컴포넌트 (mood 속성)</h2></a>
+<div class="frame" style="width:160px;height:160px"><iframe src="Bear.html#" title="곰 마스코트 컴포넌트 (mood 속성)" loading="lazy" style="width:160px;height:208px;transform:scale(1);transform-origin:0 0" scrolling="no"></iframe></div></article>
+<article class="card"><a href="Nav.html"><h2>하단 탭 컴포넌트 (active 속성)</h2></a>
+<div class="frame" style="width:300px;height:77px"><iframe src="Nav.html#" title="하단 탭 컴포넌트 (active 속성)" loading="lazy" style="width:390px;height:148px;transform:scale(0.7692307692307693);transform-origin:0 0" scrolling="no"></iframe></div></article>
+</main>
+</body>
+</html>
