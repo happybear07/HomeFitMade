@@ -1,0 +1,735 @@
+[
+  {
+    "bmi_category": "저체중",
+    "bmi_range": "BMI < 18.5",
+    "level": "초급",
+    "exercises": [
+      {
+        "id": "wall_push_up",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "glute_bridge",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "dead_bug",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 12.0,
+    "calories_per_kg": 0.206,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 17.5,
+      "weight_kg": 50.6,
+      "kcal": 10.4
+    },
+    "rationale": "저체중·초급: 상체·하체·코어를 모두 포함하도록 벽 푸시업, 맨몸 스쿼트, 글루트 브릿지, 데드버그을(를) 선택했다. 초급 볼륨(10회/20초 × 2세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "저체중",
+    "bmi_range": "BMI < 18.5",
+    "level": "중급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "chair_dip",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "jump_squat",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bird_dog",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 23.4,
+    "calories_per_kg": 0.705,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 17.5,
+      "weight_kg": 50.6,
+      "kcal": 35.7
+    },
+    "rationale": "저체중·중급: 상체·하체·코어를 모두 포함하도록 푸시업, 의자 딥스, 점프 스쿼트, 리버스 런지, 버드독을(를) 선택했다. 중급 볼륨(15회/30초 × 3세트, 휴식 45초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "저체중",
+    "bmi_range": "BMI < 18.5",
+    "level": "고급",
+    "exercises": [
+      {
+        "id": "clap_push_up",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "pike_push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "split_squat_jump",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "bulgarian_split_squat",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "mountain_climber",
+        "reps": 45,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "v_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 34.0,
+    "calories_per_kg": 1.414,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 17.5,
+      "weight_kg": 50.6,
+      "kcal": 71.5
+    },
+    "rationale": "저체중·고급: 상체·하체·코어를 모두 포함하도록 클랩 푸시업, 파이크 푸시업, 점프 런지, 불가리안 스플릿 스쿼트, 마운틴 클라이머, 브이업을(를) 선택했다. 고급 볼륨(20회/45초 × 3세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "정상",
+    "bmi_range": "18.5 ≤ BMI < 23 (18.5–22.9)",
+    "level": "초급",
+    "exercises": [
+      {
+        "id": "wall_push_up",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "glute_bridge",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "dead_bug",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 12.0,
+    "calories_per_kg": 0.206,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 21.0,
+      "weight_kg": 60.7,
+      "kcal": 12.5
+    },
+    "rationale": "정상·초급: 상체·하체·코어를 모두 포함하도록 벽 푸시업, 맨몸 스쿼트, 글루트 브릿지, 데드버그을(를) 선택했다. 초급 볼륨(10회/20초 × 2세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "정상",
+    "bmi_range": "18.5 ≤ BMI < 23 (18.5–22.9)",
+    "level": "중급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "chair_dip",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "jump_squat",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bird_dog",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 23.4,
+    "calories_per_kg": 0.705,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 21.0,
+      "weight_kg": 60.7,
+      "kcal": 42.8
+    },
+    "rationale": "정상·중급: 상체·하체·코어를 모두 포함하도록 푸시업, 의자 딥스, 점프 스쿼트, 리버스 런지, 버드독을(를) 선택했다. 중급 볼륨(15회/30초 × 3세트, 휴식 45초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "정상",
+    "bmi_range": "18.5 ≤ BMI < 23 (18.5–22.9)",
+    "level": "고급",
+    "exercises": [
+      {
+        "id": "clap_push_up",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "pike_push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "split_squat_jump",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "bulgarian_split_squat",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "mountain_climber",
+        "reps": 45,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "v_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 34.0,
+    "calories_per_kg": 1.414,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 21.0,
+      "weight_kg": 60.7,
+      "kcal": 85.8
+    },
+    "rationale": "정상·고급: 상체·하체·코어를 모두 포함하도록 클랩 푸시업, 파이크 푸시업, 점프 런지, 불가리안 스플릿 스쿼트, 마운틴 클라이머, 브이업을(를) 선택했다. 고급 볼륨(20회/45초 × 3세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "비만 전단계(과체중)",
+    "bmi_range": "23 ≤ BMI < 25 (23–24.9)",
+    "level": "초급",
+    "exercises": [
+      {
+        "id": "wall_push_up",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "glute_bridge",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "dead_bug",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 12.0,
+    "calories_per_kg": 0.206,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 24.0,
+      "weight_kg": 69.4,
+      "kcal": 14.3
+    },
+    "rationale": "비만 전단계(과체중)·초급: 상체·하체·코어를 모두 포함하도록 벽 푸시업, 맨몸 스쿼트, 글루트 브릿지, 데드버그을(를) 선택했다. 초급 볼륨(10회/20초 × 2세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "비만 전단계(과체중)",
+    "bmi_range": "23 ≤ BMI < 25 (23–24.9)",
+    "level": "중급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "chair_dip",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "jump_squat",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bird_dog",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 23.4,
+    "calories_per_kg": 0.705,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 24.0,
+      "weight_kg": 69.4,
+      "kcal": 48.9
+    },
+    "rationale": "비만 전단계(과체중)·중급: 상체·하체·코어를 모두 포함하도록 푸시업, 의자 딥스, 점프 스쿼트, 리버스 런지, 버드독을(를) 선택했다. 중급 볼륨(15회/30초 × 3세트, 휴식 45초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "비만 전단계(과체중)",
+    "bmi_range": "23 ≤ BMI < 25 (23–24.9)",
+    "level": "고급",
+    "exercises": [
+      {
+        "id": "clap_push_up",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "pike_push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "split_squat_jump",
+        "reps": 6,
+        "sets": 3,
+        "rest_sec": 90
+      },
+      {
+        "id": "bulgarian_split_squat",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "mountain_climber",
+        "reps": 45,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "v_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 34.0,
+    "calories_per_kg": 1.414,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 24.0,
+      "weight_kg": 69.4,
+      "kcal": 98.1
+    },
+    "rationale": "비만 전단계(과체중)·고급: 상체·하체·코어를 모두 포함하도록 클랩 푸시업, 파이크 푸시업, 점프 런지, 불가리안 스플릿 스쿼트, 마운틴 클라이머, 브이업을(를) 선택했다. 고급 볼륨(20회/45초 × 3세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. BMI 25 미만이므로 관절 부담 제외 규칙은 적용하지 않았다."
+  },
+  {
+    "bmi_category": "1단계 비만",
+    "bmi_range": "25 ≤ BMI < 30 (25–29.9)",
+    "level": "초급",
+    "exercises": [
+      {
+        "id": "wall_push_up",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "glute_bridge",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "dead_bug",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 12.0,
+    "calories_per_kg": 0.206,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 27.5,
+      "weight_kg": 79.5,
+      "kcal": 16.4
+    },
+    "rationale": "1단계 비만·초급: 상체·하체·코어를 모두 포함하도록 벽 푸시업, 맨몸 스쿼트, 글루트 브릿지, 데드버그을(를) 선택했다. 초급 볼륨(10회/20초 × 2세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 이 난이도 후보에는 관절 부담 '높음' 운동이 없어 대체가 필요 없다."
+  },
+  {
+    "bmi_category": "1단계 비만",
+    "bmi_range": "25 ≤ BMI < 30 (25–29.9)",
+    "level": "중급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "chair_dip",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bird_dog",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      }
+    ],
+    "substitutions": [
+      {
+        "from": "jump_squat",
+        "to": "bodyweight_squat"
+      }
+    ],
+    "estimated_minutes": 22.5,
+    "calories_per_kg": 0.705,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 27.5,
+      "weight_kg": 79.5,
+      "kcal": 56.0
+    },
+    "rationale": "1단계 비만·중급: 상체·하체·코어를 모두 포함하도록 푸시업, 의자 딥스, 맨몸 스쿼트, 리버스 런지, 버드독을(를) 선택했다. 중급 볼륨(15회/30초 × 3세트, 휴식 45초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 점프 스쿼트(관절 부담 높음)은 맨몸 스쿼트(으)로 대체했다."
+  },
+  {
+    "bmi_category": "1단계 비만",
+    "bmi_range": "25 ≤ BMI < 30 (25–29.9)",
+    "level": "고급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "pike_push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "bulgarian_split_squat",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "mountain_climber",
+        "reps": 45,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "v_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [
+      {
+        "from": "clap_push_up",
+        "to": "push_up"
+      },
+      {
+        "from": "split_squat_jump",
+        "to": "reverse_lunge"
+      }
+    ],
+    "estimated_minutes": 35.2,
+    "calories_per_kg": 1.576,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 27.5,
+      "weight_kg": 79.5,
+      "kcal": 125.3
+    },
+    "rationale": "1단계 비만·고급: 상체·하체·코어를 모두 포함하도록 푸시업, 파이크 푸시업, 리버스 런지, 불가리안 스플릿 스쿼트, 마운틴 클라이머, 브이업을(를) 선택했다. 고급 볼륨(20회/45초 × 3세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 클랩 푸시업(관절 부담 높음)은 푸시업(으)로 대체했다. 점프 런지(관절 부담 높음)은 리버스 런지(으)로 대체했다."
+  },
+  {
+    "bmi_category": "2단계 이상 비만",
+    "bmi_range": "BMI ≥ 30",
+    "level": "초급",
+    "exercises": [
+      {
+        "id": "wall_push_up",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "glute_bridge",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      },
+      {
+        "id": "dead_bug",
+        "reps": 10,
+        "sets": 2,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [],
+    "estimated_minutes": 12.0,
+    "calories_per_kg": 0.206,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 32.0,
+      "weight_kg": 92.5,
+      "kcal": 19.1
+    },
+    "rationale": "2단계 이상 비만·초급: 상체·하체·코어를 모두 포함하도록 벽 푸시업, 맨몸 스쿼트, 글루트 브릿지, 데드버그을(를) 선택했다. 초급 볼륨(10회/20초 × 2세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 이 난이도 후보에는 관절 부담 '높음' 운동이 없어 대체가 필요 없다."
+  },
+  {
+    "bmi_category": "2단계 이상 비만",
+    "bmi_range": "BMI ≥ 30",
+    "level": "중급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "chair_dip",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bodyweight_squat",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      },
+      {
+        "id": "bird_dog",
+        "reps": 15,
+        "sets": 3,
+        "rest_sec": 45
+      }
+    ],
+    "substitutions": [
+      {
+        "from": "jump_squat",
+        "to": "bodyweight_squat"
+      }
+    ],
+    "estimated_minutes": 22.5,
+    "calories_per_kg": 0.705,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 32.0,
+      "weight_kg": 92.5,
+      "kcal": 65.2
+    },
+    "rationale": "2단계 이상 비만·중급: 상체·하체·코어를 모두 포함하도록 푸시업, 의자 딥스, 맨몸 스쿼트, 리버스 런지, 버드독을(를) 선택했다. 중급 볼륨(15회/30초 × 3세트, 휴식 45초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 점프 스쿼트(관절 부담 높음)은 맨몸 스쿼트(으)로 대체했다."
+  },
+  {
+    "bmi_category": "2단계 이상 비만",
+    "bmi_range": "BMI ≥ 30",
+    "level": "고급",
+    "exercises": [
+      {
+        "id": "push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "pike_push_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "reverse_lunge",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "bulgarian_split_squat",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "mountain_climber",
+        "reps": 45,
+        "sets": 3,
+        "rest_sec": 60
+      },
+      {
+        "id": "v_up",
+        "reps": 20,
+        "sets": 3,
+        "rest_sec": 60
+      }
+    ],
+    "substitutions": [
+      {
+        "from": "clap_push_up",
+        "to": "push_up"
+      },
+      {
+        "from": "split_squat_jump",
+        "to": "reverse_lunge"
+      }
+    ],
+    "estimated_minutes": 35.2,
+    "calories_per_kg": 1.576,
+    "calorie_example": {
+      "height_cm": 170,
+      "bmi": 32.0,
+      "weight_kg": 92.5,
+      "kcal": 145.8
+    },
+    "rationale": "2단계 이상 비만·고급: 상체·하체·코어를 모두 포함하도록 푸시업, 파이크 푸시업, 리버스 런지, 불가리안 스플릿 스쿼트, 마운틴 클라이머, 브이업을(를) 선택했다. 고급 볼륨(20회/45초 × 3세트, 휴식 60초)은 ACSM 2009 권고를 맨몸운동에 맞춘 팀 규칙이다. 클랩 푸시업(관절 부담 높음)은 푸시업(으)로 대체했다. 점프 런지(관절 부담 높음)은 리버스 런지(으)로 대체했다."
+  }
+]

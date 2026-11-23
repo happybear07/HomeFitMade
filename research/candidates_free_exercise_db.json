@@ -1,0 +1,2237 @@
+{
+ "source": {
+  "name": "free-exercise-db",
+  "url": "https://github.com/yuhonas/free-exercise-db",
+  "raw": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json",
+  "license": "Unlicense",
+  "attribution": "not required (public domain); courtesy credit recommended"
+ },
+ "meta": {
+  "generated": "2026-11-17",
+  "filter": "bodyweight / no equipment, home-feasible (bars, machines, bands, balls, stretching excluded; chair/wall/bench flagged in needs_furniture where detected)",
+  "part_mapping": "first primary muscle -> 상체/하체/코어 (abdominals, lower back = 코어)",
+  "in_our_data": "true if the movement is essentially one of our 20 exercises in exercises.json; overlap.type=\"variant\" marks close variations"
+ },
+ "stats": {
+  "total": 876,
+  "body_only_or_none_equipment": 188,
+  "excluded_stretching": 85,
+  "excluded_apparatus": 23,
+  "candidates": 80,
+  "not_in_our_data": 67
+ },
+ "not_in_our_data_ids": [
+  "3_4_Sit-Up",
+  "Air_Bike",
+  "Alternate_Heel_Touchers",
+  "Alternate_Leg_Diagonal_Bound",
+  "Bench_Jump",
+  "Bent-Knee_Hip_Raise",
+  "Body-Up",
+  "Body_Tricep_Press",
+  "Bodyweight_Walking_Lunge",
+  "Bottoms_Up",
+  "Butt-Ups",
+  "Clock_Push-Up",
+  "Cocoons",
+  "Cross-Body_Crunch",
+  "Crunch_-_Hands_Overhead",
+  "Decline_Crunch",
+  "Decline_Oblique_Crunch",
+  "Decline_Push-Up",
+  "Decline_Reverse_Crunch",
+  "Dips_-_Triceps_Version",
+  "Double_Leg_Butt_Kick",
+  "Elbow_to_Knee",
+  "Fast_Skipping",
+  "Flat_Bench_Leg_Pull-In",
+  "Flat_Bench_Lying_Leg_Raise",
+  "Floor_Glute-Ham_Raise",
+  "Flutter_Kicks",
+  "Frog_Sit-Ups",
+  "Glute_Kickback",
+  "Incline_Push-Up",
+  "Incline_Push-Up_Close-Grip",
+  "Incline_Push-Up_Medium",
+  "Incline_Push-Up_Reverse_Grip",
+  "Incline_Push-Up_Wide",
+  "Isometric_Chest_Squeezes",
+  "Isometric_Wipers",
+  "Jackknife_Sit-Up",
+  "Janda_Sit-Up",
+  "Knee_Tuck_Jump",
+  "Lateral_Bound",
+  "Leg_Lift",
+  "Leg_Pull-In",
+  "Natural_Glute_Ham_Raise",
+  "Oblique_Crunches",
+  "Oblique_Crunches_-_On_The_Floor",
+  "Push-Up_Wide",
+  "Push-Ups_-_Close_Triceps_Position",
+  "Push-Ups_With_Feet_Elevated",
+  "Push_Up_to_Side_Plank",
+  "Pushups_Close_and_Wide_Hand_Positions",
+  "Reverse_Crunch",
+  "Rocket_Jump",
+  "Russian_Twist",
+  "Seated_Flat_Bench_Leg_Pull-In",
+  "Seated_Leg_Tucks",
+  "Side_Jackknife",
+  "Side_Standing_Long_Jump",
+  "Single-Arm_Push-Up",
+  "Single_Leg_Butt_Kick",
+  "Single_Leg_Glute_Bridge",
+  "Sit-Up",
+  "Spider_Crawl",
+  "Standing_Long_Jump",
+  "Standing_Towel_Triceps_Extension",
+  "Star_Jump",
+  "Step-up_with_Knee_Raise",
+  "Tuck_Crunch"
+ ],
+ "items": [
+  {
+   "source_id": "3_4_Sit-Up",
+   "name_en": "3/4 Sit-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie down on the floor and secure your feet. Your legs should be bent at the knees. Place your hands behind or to the side of your head. You will begin with your back on the ground. This will be your starting position. Flex your hips and spine to raise your torso toward your knees.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/3_4_Sit-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Air_Bike",
+   "name_en": "Air Bike",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put your hands beside your head. Be careful however to not strain with the neck as you perform it. Now lift your shoulders into the crunch position. Bring knees up to where they are perpendicular…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Air_Bike.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Alternate_Heel_Touchers",
+   "name_en": "Alternate Heel Touchers",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie on the floor with the knees bent and the feet on the floor around 18-24 inches apart. Your arms should be extended by your side. This will be your starting position. Crunch over your torso forward and up about 3-4 inches to the right side and touch your right heel as you hold the contraction…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Alternate_Heel_Touchers.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Alternate_Leg_Diagonal_Bound",
+   "name_en": "Alternate Leg Diagonal Bound",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": null,
+   "needs_furniture": [
+    "table"
+   ],
+   "instructions": "Assume a comfortable stance with one foot slightly in front of the other. Begin by pushing off with the front leg, driving the opposite knee forward and as high as possible before landing. Attempt to cover as much distance to each side with each bound. It may help to use a line on the ground to…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Alternate_Leg_Diagonal_Bound.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Bench_Dips",
+   "name_en": "Bench Dips",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "shoulders"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "For this exercise you will need to place a bench behind your back. With the bench perpendicular to your body, and while looking away from it, hold on to the bench on its edge with the hands fully extended, separated at shoulder width. The legs will be extended forward, bent at the waist and…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bench_Dips.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "chair_dip"
+   }
+  },
+  {
+   "source_id": "Bench_Jump",
+   "name_en": "Bench Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Begin with a box or bench 1-2 feet in front of you. Stand with your feet shoulder width apart. This will be your starting position. Perform a short squat in preparation for the jump; swing your arms behind you. Rebound out of this position, extending through the hips, knees, and ankles to jump as…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bench_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Bent-Knee_Hip_Raise",
+   "name_en": "Bent-Knee Hip Raise",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lay flat on the floor with your arms next to your sides. Now bend your knees at around a 75 degree angle and lift your feet off the floor by around 2 inches. Using your lower abs, bring your knees in towards you as you maintain the 75 degree angle bend in your legs. Continue this movement until you…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bent-Knee_Hip_Raise.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Body-Up",
+   "name_en": "Body-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "forearms"
+   ],
+   "part": "상체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Assume a plank position on the ground. You should be supporting your bodyweight on your toes and forearms, keeping your torso straight. Your forearms should be shoulder-width apart. This will be your starting position. Pressing your palms firmly into the ground, extend through the elbows to raise…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Body-Up.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Body_Tricep_Press",
+   "name_en": "Body Tricep Press",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "Position a bar in a rack at chest height. Standing, take a shoulder width grip on the bar and step a yard or two back, feet together and arms extended so that you are leaning on the bar. This will be your starting position. Begin by flexing the elbow, lowering yourself towards the bar.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Body_Tricep_Press.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Bodyweight_Squat",
+   "name_en": "Bodyweight Squat",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position. Begin the movement by flexing your knees and hips, sitting back with your hips. Continue down to full depth if you are able,and quickly reverse the motion until you return to…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bodyweight_Squat.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "bodyweight_squat"
+   }
+  },
+  {
+   "source_id": "Bodyweight_Walking_Lunge",
+   "name_en": "Bodyweight Walking Lunge",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": null,
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "Begin standing with your feet shoulder width apart and your hands on your hips. Step forward with one leg, flexing the knees to drop your hips. Descend until your rear knee nearly touches the ground. Your posture should remain upright, and your front knee should stay above the front foot. Drive…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bodyweight_Walking_Lunge.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "reverse_lunge"
+   }
+  },
+  {
+   "source_id": "Bottoms_Up",
+   "name_en": "Bottoms Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Begin by lying on your back on the ground. Your legs should be straight and your arms at your side. This will be your starting position. To perform the movement, tuck the knees toward your chest by flexing the hips and knees. Following this, extend your legs directly above you so that they are…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Bottoms_Up.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Butt-Ups",
+   "name_en": "Butt-Ups",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin a pushup position but with your elbows on the ground and resting on your forearms. Your arms should be bent at a 90 degree angle. Arch your back slightly out rather than keeping your back completely straight. Raise your glutes toward the ceiling, squeezing your abs tightly to close the…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Butt-Ups.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Butt_Lift_Bridge",
+   "name_en": "Butt Lift (Bridge)",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie flat on the floor on your back with the hands by your side and your knees bent. Your feet should be placed around shoulder width. This will be your starting position. Pushing mainly with your heels, lift your hips off the floor while keeping your back straight. Breathe out as you perform this…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Butt_Lift_Bridge.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "glute_bridge"
+   }
+  },
+  {
+   "source_id": "Clock_Push-Up",
+   "name_en": "Clock Push-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Move into a prone position on the floor, supporting your weight on your hands and toes. Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position. Descend by flexing at the elbow, lowering your chest…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Clock_Push-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Cocoons",
+   "name_en": "Cocoons",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin by lying on your back on the ground. Your legs should be straight and your arms extended behind your head. This will be your starting position. To perform the movement, tuck the knees toward your chest, rotating your pelvis to lift your glutes from the floor. As you do so, flex the spine,…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Cocoons.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Cross-Body_Crunch",
+   "name_en": "Cross-Body Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie flat on your back and bend your knees about 60 degrees. Keep your feet flat on the floor and place your hands loosely behind your head. This will be your starting position. Now curl up and bring your right elbow and shoulder across your body while bring your left knee in toward your left…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Cross-Body_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Crunch_-_Hands_Overhead",
+   "name_en": "Crunch - Hands Overhead",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie on the floor with your back flat and knees bent with around a 60-degree angle between the hamstrings and the calves. Keep your feet flat on the floor and stretch your arms overhead with your palms crossed. This will be your starting position. Curl your upper body forward and bring your shoulder…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Crunch_-_Hands_Overhead.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Crunches",
+   "name_en": "Crunches",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Lie flat on your back with your feet flat on the ground, or resting on a bench with your knees bent at a 90 degree angle. If you are resting your feet on a bench, place them three to four inches apart and point your toes inward so they touch. Now place your hands lightly on either side of your head…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Crunches.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Dead_Bug",
+   "name_en": "Dead Bug",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin lying on your back with your hands extended above you toward the ceiling. Bring your feet, knees, and hips up to 90 degrees. Exhale hard to bring your ribcage down and flatten your back onto the floor, rotating your pelvis up and squeezing your glutes. Hold this position throughout the…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Dead_Bug.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "dead_bug"
+   }
+  },
+  {
+   "source_id": "Decline_Crunch",
+   "name_en": "Decline Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "decline"
+   ],
+   "instructions": "Secure your legs at the end of the decline bench and lie down. Now place your hands lightly on either side of your head keeping your elbows in. Tip: Don't lock your fingers behind your head. While pushing the small of your back down in the bench to better isolate your abdominal muscles, begin to…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Decline_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Decline_Oblique_Crunch",
+   "name_en": "Decline Oblique Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "decline"
+   ],
+   "instructions": "Secure your legs at the end of the decline bench and slowly lay down on the bench. Raise your upper body off the bench until your torso is about 35-45 degrees if measured from the floor. Put one hand beside your head and the other on your thigh. This will be your starting position.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Decline_Oblique_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Decline_Push-Up",
+   "name_en": "Decline Push-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": null,
+   "needs_furniture": [
+    "bench",
+    "decline"
+   ],
+   "instructions": "Lie on the floor face down and place your hands about 36 inches apart while holding your torso up at arms length. Move your feet up to a box or bench. This will be your starting position. Next, lower yourself downward until your chest almost touches the floor as you inhale. Now breathe out and…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Decline_Push-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Decline_Reverse_Crunch",
+   "name_en": "Decline Reverse Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "decline"
+   ],
+   "instructions": "Lie on your back on a decline bench and hold on to the top of the bench with both hands. Don't let your body slip down from this position. Hold your legs parallel to the floor using your abs to hold them there while keeping your knees and feet together. Tip: Your legs should be fully extended with…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Decline_Reverse_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Dips_-_Triceps_Version",
+   "name_en": "Dips - Triceps Version",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "shoulders"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "To get into the starting position, hold your body at arm's length with your arms nearly locked above the bars. Now, inhale and slowly lower yourself downward. Your torso should remain upright and your elbows should stay close to your body. This helps to better focus on tricep involvement. Lower…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Dips_-_Triceps_Version.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "chair_dip"
+   }
+  },
+  {
+   "source_id": "Double_Leg_Butt_Kick",
+   "name_en": "Double Leg Butt Kick",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin standing with your knees slightly bent. Quickly squat a short distance, flexing the hips and knees, and immediately extend to jump for maximum vertical height. As you go up, tuck your heels by flexing the knees, attempting to touch the buttocks.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Double_Leg_Butt_Kick.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Elbow_to_Knee",
+   "name_en": "Elbow to Knee",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie on the floor, crossing your right leg across your bent left knee. Clasp your hands behind your head, beginning with your shoulder blades on the ground. This will be your starting position. Perform the motion by flexing the spine and rotating your torso to bring the left elbow to the right knee.…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Elbow_to_Knee.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Fast_Skipping",
+   "name_en": "Fast Skipping",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "Start in a relaxed position with one leg slightly forward. This will be your starting position. Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth. Perform fast skips by maintaining close contact with the ground and reduce air time,…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Fast_Skipping.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Flat_Bench_Leg_Pull-In",
+   "name_en": "Flat Bench Leg Pull-In",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Lie on an exercise mat or a flat bench with your legs off the end. Place your hands either under your glutes with your palms down or by the sides holding on to the bench (or with palms down by the side on an exercise mat). Also extend your legs straight out. This will be your starting position.…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Flat_Bench_Leg_Pull-In.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Flat_Bench_Lying_Leg_Raise",
+   "name_en": "Flat Bench Lying Leg Raise",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Lie with your back flat on a bench and your legs extended in front of you off the end. Place your hands either under your glutes with your palms down or by the sides holding on to the bench. This will be your starting position. As you keep your legs extended, straight as possible with your knees…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Flat_Bench_Lying_Leg_Raise.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Floor_Glute-Ham_Raise",
+   "name_en": "Floor Glute-Ham Raise",
+   "name_ko": null,
+   "primary_muscles": [
+    "hamstrings"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes"
+   ],
+   "part": "하체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": null,
+   "needs_furniture": [
+    "table"
+   ],
+   "instructions": "You can use a partner for this exercise or brace your feet under something stable. Begin on your knees with your upper legs and torso upright. If using a partner, they will firmly hold your feet to keep you in position. This will be your starting position. Lower yourself by extending at the knee,…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Floor_Glute-Ham_Raise.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Flutter_Kicks",
+   "name_en": "Flutter Kicks",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "On a flat bench lie facedown with the hips on the edge of the bench, the legs straight with toes high off the floor and with the arms on top of the bench holding on to the front edge. Squeeze your glutes and hamstrings and straighten the legs until they are level with the hips. This will be your…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Flutter_Kicks.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Freehand_Jump_Squat",
+   "name_en": "Freehand Jump Squat",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Cross your arms over your chest. With your head up and your back straight, position your feet at shoulder width. Keeping your back straight and chest up, squat down as you inhale until your upper thighs are parallel, or lower, to the floor.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Freehand_Jump_Squat.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "jump_squat"
+   }
+  },
+  {
+   "source_id": "Frog_Sit-Ups",
+   "name_en": "Frog Sit-Ups",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie with your back flat on the floor (or exercise mat) and your legs extended in front of you. Now bend at the knees and place your outer thighs by the floor (or mat) as you make the soles of your feet touch each other. Now try pushing both soles and bringing them up as near you as possible while…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Frog_Sit-Ups.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Glute_Kickback",
+   "name_en": "Glute Kickback",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Kneel on the floor or an exercise mat and bend at the waist with your arms extended in front of you (perpendicular to the torso) in order to get into a kneeling push-up position but with the arms spaced at shoulder width. Your head should be looking forward and the bend of the knees should create a…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Glute_Kickback.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Incline_Push-Up",
+   "name_en": "Incline Push-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "elevat"
+   ],
+   "instructions": "Stand facing bench or sturdy elevated platform. Place hands on edge of bench or platform, slightly wider than shoulder width. Position forefoot back from bench or platform with arms and body straight. Arms should be perpendicular to body. Keeping body straight, lower chest to edge of box or…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Incline_Push-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "wall_push_up"
+   }
+  },
+  {
+   "source_id": "Incline_Push-Up_Close-Grip",
+   "name_en": "Incline Push-Up Close-Grip",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "shoulders"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height. Place your hands next to one another on the bar. Position your feet back from the bar with arms and body straight. This will be your starting position.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Incline_Push-Up_Close-Grip.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "wall_push_up"
+   }
+  },
+  {
+   "source_id": "Incline_Push-Up_Medium",
+   "name_en": "Incline Push-Up Medium",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height. Place your hands on the bar, with your hands about shoulder width apart. Position your feet back from the bar with arms and body straight. This will be your starting position.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Incline_Push-Up_Medium.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "wall_push_up"
+   }
+  },
+  {
+   "source_id": "Incline_Push-Up_Reverse_Grip",
+   "name_en": "Incline Push-Up Reverse Grip",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height. Place your hands on the bar palms up, with your hands about shoulder width apart. Position your feet back from the bar with arms and body straight. This will be your starting position.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Incline_Push-Up_Reverse_Grip.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "wall_push_up"
+   }
+  },
+  {
+   "source_id": "Incline_Push-Up_Wide",
+   "name_en": "Incline Push-Up Wide",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height. Place your hands on the bar, with your hands wider than shoulder width. Position your feet back from the bar with arms and body straight. Your arms should be perpendicular to the body. This will be your starting…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Incline_Push-Up_Wide.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "wall_push_up"
+   }
+  },
+  {
+   "source_id": "Isometric_Chest_Squeezes",
+   "name_en": "Isometric Chest Squeezes",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "static",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "While either seating or standing, bend your arms at a 90-degree angle and place the palms of your hands together in front of your chest. Tip: Your hands should be open with the palms together and fingers facing forward (perpendicular to your torso). Push both hands against each other as you…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Isometric_Chest_Squeezes.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Isometric_Wipers",
+   "name_en": "Isometric Wipers",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Assume a push-up position, supporting your weight on your hands and toes while keeping your body straight. Your hands should be just outside of shoulder width. This will be your starting position. Begin by shifting your body weight as far to one side as possible, allowing the elbow on that side to…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Isometric_Wipers.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Jackknife_Sit-Up",
+   "name_en": "Jackknife Sit-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie flat on the floor (or exercise mat) on your back with your arms extended straight back behind your head and your legs extended also. This will be your starting position. As you exhale, bend at the waist while simultaneously raising your legs and arms to meet in a jackknife position. Tip: The…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Jackknife_Sit-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Janda_Sit-Up",
+   "name_en": "Janda Sit-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Position your body on the floor in the basic sit-up position; knees to a ninety degree angle with feet flat on the floor and arms either crossed over your chest or to the sides. This will be your starting position. As you strongly tighten your glutes and hamstrings, fill your lungs with air and in…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Janda_Sit-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Knee_Tuck_Jump",
+   "name_en": "Knee Tuck Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "hamstrings"
+   ],
+   "secondary_muscles": [
+    "abductors",
+    "adductors",
+    "calves",
+    "glutes",
+    "quadriceps"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "table"
+   ],
+   "instructions": "Begin in a comfortable standing position with your knees slightly bent. Hold your hands in front of you, palms down with your fingertips together at chest height. This will be your starting position. Rapidly dip down into a quarter squat and immediately explode upward. Drive the knees towards the…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Knee_Tuck_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Lateral_Bound",
+   "name_en": "Lateral Bound",
+   "name_ko": null,
+   "primary_muscles": [
+    "adductors"
+   ],
+   "secondary_muscles": [
+    "abductors",
+    "calves",
+    "glutes",
+    "hamstrings",
+    "quadriceps"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Assume a half squat position facing 90 degrees from your direction of travel. This will be your starting position. Allow your lead leg to do a countermovement inward as you shift your weight to the outside leg. Immediately push off and extend, attempting to bound to the side as far as possible.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Lateral_Bound.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Leg_Lift",
+   "name_en": "Leg Lift",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "chair"
+   ],
+   "instructions": "While standing up straight with both feet next to each other at around shoulder width, grab a sturdy surface such as the sides of a squat rack or the top of a chair to brace yourself and keep balance. With or without an ankle weight, lift one leg behind you as if performing a leg curl but standing…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Leg_Lift.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Leg_Pull-In",
+   "name_en": "Leg Pull-In",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie on an exercise mat with your legs extended and your hands either palms facing down next to you or under your glutes. Tip: My preference is with the hands next to me. This will be your starting position. Bend your knees and pull your upper thighs into your midsection as you breathe out. Continue…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Leg_Pull-In.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Mountain_Climbers",
+   "name_en": "Mountain Climbers",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "hamstrings",
+    "shoulders"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": null,
+   "needs_furniture": [],
+   "instructions": "Begin in a pushup position, with your weight supported by your hands and toes. Flexing the knee and hip, bring one leg until the knee is approximately under the hip. This will be your starting position. Explosively reverse the positions of your legs, extending the bent leg until the leg is straight…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Mountain_Climbers.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "mountain_climber"
+   }
+  },
+  {
+   "source_id": "Natural_Glute_Ham_Raise",
+   "name_en": "Natural Glute Ham Raise",
+   "name_ko": null,
+   "primary_muscles": [
+    "hamstrings"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "lower back"
+   ],
+   "part": "하체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Using the leg pad of a lat pulldown machine or a preacher bench, position yourself so that your ankles are under the pads, knees on the seat, and you are facing away from the machine. You should be upright and maintaining good posture. This will be your starting position. Lower yourself under…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Natural_Glute_Ham_Raise.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Oblique_Crunches",
+   "name_en": "Oblique Crunches",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put one hand beside your head and the other to the side against the floor. Make sure your feet are elevated and resting on a flat surface. Now lift the shoulder in which your hand is touching your…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Oblique_Crunches.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Oblique_Crunches_-_On_The_Floor",
+   "name_en": "Oblique Crunches - On The Floor",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Start out by lying on your right side with your legs lying on top of each other. Make sure your knees are bent a little bit. Place your left hand behind your head. Once you are in this set position, begin by moving your left elbow up as you would perform a normal crunch except this time the main…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Oblique_Crunches_-_On_The_Floor.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Plank",
+   "name_en": "Plank",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "static",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Get into a prone position on the floor, supporting your weight on your toes and your forearms. Your arms are bent and directly below the shoulder. Keep your body straight at all times, and hold this position as long as possible. To increase difficulty, an arm or leg can be raised.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Plank.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "plank"
+   }
+  },
+  {
+   "source_id": "Plyo_Push-up",
+   "name_en": "Plyo Push-up",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Move into a prone position on the floor, supporting your weight on your hands and toes. Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position. Descend by flexing at the elbow, lowering your chest…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Plyo_Push-up.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "clap_push_up"
+   }
+  },
+  {
+   "source_id": "Push-Up_Wide",
+   "name_en": "Push-Up Wide",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": null,
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "With your hands wide apart, support your body on your toes and hands in a plank position. Your elbows should be extended and your body straight. Do not allow your hips to sag. This will be your starting position. To begin, allow the elbows to flex, lowering your chest to the floor as you inhale.…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Push-Up_Wide.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Push-Ups_-_Close_Triceps_Position",
+   "name_en": "Push-Ups - Close Triceps Position",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "shoulders"
+   ],
+   "part": "상체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length. Lower yourself until your chest almost touches the floor as you inhale. Using your triceps and some of your pectoral muscles, press…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Push-Ups_-_Close_Triceps_Position.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Push-Ups_With_Feet_Elevated",
+   "name_en": "Push-Ups With Feet Elevated",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "elevat",
+    "step"
+   ],
+   "instructions": "Lie on the floor face down and place your hands about 36 inches apart from each other holding your torso up at arms length. Place your toes on top of a flat bench. This will allow your body to be elevated. Note: The higher the elevation of the flat bench, the higher the resistance of the exercise…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Push-Ups_With_Feet_Elevated.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Push_Up_to_Side_Plank",
+   "name_en": "Push Up to Side Plank",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "abdominals",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Get into pushup position on the toes with your hands just outside of shoulder width. Perform a pushup by allowing the elbows to flex. As you descend, keep your body straight. Do one pushup and as you come up, shift your weight on the left side of the body, twist to the side while bringing the right…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Push_Up_to_Side_Plank.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Pushups",
+   "name_en": "Pushups",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie on the floor face down and place your hands about 36 inches apart while holding your torso up at arms length. Next, lower yourself downward until your chest almost touches the floor as you inhale. Now breathe out and press your upper body back up to the starting position while squeezing your…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Pushups.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Pushups_Close_and_Wide_Hand_Positions",
+   "name_en": "Pushups (Close and Wide Hand Positions)",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "Lie on the floor face down and body straight with your toes on the floor and the hands wider than shoulder width for a wide hand position and closer than shoulder width for a close hand position. Make sure you are holding your torso up at arms length. Lower yourself until your chest almost touches…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Pushups_Close_and_Wide_Hand_Positions.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Reverse_Crunch",
+   "name_en": "Reverse Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lie down on the floor with your legs fully extended and arms to the side of your torso with the palms on the floor. Your arms should be stationary for the entire exercise. Move your legs up so that your thighs are perpendicular to the floor and feet are together and parallel to the floor. This is…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Reverse_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Rocket_Jump",
+   "name_en": "Rocket Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body. To initiate the move, squat down halfway and explode back up as high as possible. Fully extend your entire body, reaching overhead as far as possible. As you land, absorb your impact through the legs.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Rocket_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Russian_Twist",
+   "name_en": "Russian Twist",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [
+    "lower back"
+   ],
+   "part": "코어",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Elevate your upper body so that it creates an imaginary V-shape with your thighs. Your arms should be fully extended in front of you…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Russian_Twist.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Scissors_Jump",
+   "name_en": "Scissors Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground. Ensure that the front knee is over the midline of the foot. Extending through both legs, jump as high as possible, swinging your arms to gain lift. As you jump as high as you can,…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Scissors_Jump.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "split_squat_jump"
+   }
+  },
+  {
+   "source_id": "Seated_Flat_Bench_Leg_Pull-In",
+   "name_en": "Seated Flat Bench Leg Pull-In",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Sit on a bench with the legs stretched out in front of you slightly below parallel and your arms holding on to the sides of the bench. Your torso should be leaning backwards around a 45-degree angle from the bench. This will be your starting position. Bring the knees in toward you as you move your…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Seated_Flat_Bench_Leg_Pull-In.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Seated_Leg_Tucks",
+   "name_en": "Seated Leg Tucks",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench"
+   ],
+   "instructions": "Sit on a bench with the legs stretched out in front of you slightly below parallel and your arms holding on to the sides of the bench. Your torso should be leaning backwards around a 45-degree angle from the bench. This will be your starting position. Bring the knees in toward you as you move your…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Seated_Leg_Tucks.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Side_Bridge",
+   "name_en": "Side Bridge",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [
+    "shoulders"
+   ],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": null,
+   "force": "static",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Side_Bridge.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "side_plank"
+   }
+  },
+  {
+   "source_id": "Side_Jackknife",
+   "name_en": "Side Jackknife",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Side_Jackknife.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "v_up"
+   }
+  },
+  {
+   "source_id": "Side_Standing_Long_Jump",
+   "name_en": "Side Standing Long Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": null,
+   "needs_furniture": [],
+   "instructions": "Begin standing with your feet hip width apart in an athletic stance. Your head and chest should be up, knees and hips slightly bent. This will be your starting position. Leaning to your right, extend through your hips, knees, and ankles to jump into the air. Block with the arms to lead the…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Side_Standing_Long_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Single-Arm_Push-Up",
+   "name_en": "Single-Arm Push-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "shoulders",
+    "triceps"
+   ],
+   "part": "상체",
+   "level": "중급",
+   "level_raw": "intermediate",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin laying prone on the ground. Move yourself into a position supporting your weight on your toes and one arm. Your working arm should be placed directly under the shoulder, fully extended. Your legs should be extended, and for this movement you may need a wider base, placing your feet further…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Single-Arm_Push-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "push_up"
+   }
+  },
+  {
+   "source_id": "Single_Leg_Butt_Kick",
+   "name_en": "Single Leg Butt Kick",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin by standing on one leg, with the bent knee raised. This will be your start position. Using a countermovement jump, take off upward by extending the hip, knee, and ankle of the grounded leg. Immediately flex the knee and attempt to touch your butt with the heel of your jumping leg.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Single_Leg_Butt_Kick.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Single_Leg_Glute_Bridge",
+   "name_en": "Single Leg Glute Bridge",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Lay on the floor with your feet flat and knees bent. Raise one leg off of the ground, pulling the knee to your chest. This will be your starting position. Execute the movement by driving through the heel, extending your hip upward and raising your glutes off of the ground.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Single_Leg_Glute_Bridge.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "glute_bridge"
+   }
+  },
+  {
+   "source_id": "Sit-Up",
+   "name_en": "Sit-Up",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Place your hands behind your head and lock them together by clasping your fingers. This is the starting position. Elevate your upper body so…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Sit-Up.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  },
+  {
+   "source_id": "Spider_Crawl",
+   "name_en": "Spider Crawl",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [
+    "chest",
+    "shoulders",
+    "triceps"
+   ],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin in a prone position on the floor. Support your weight on your hands and toes, with your feet together and your body straight. Your arms should be bent to 90 degrees. This will be your starting position. Initiate the movement by raising one foot off of the ground. Externally rotate the leg and…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Spider_Crawl.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Split_Jump",
+   "name_en": "Split Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground. Ensure that the front knee is over the midline of the foot. Extending through both legs, jump as high as possible, swinging your arms to gain lift.",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Split_Jump.json",
+   "in_our_data": true,
+   "overlap": {
+    "type": "same",
+    "our_id": "split_squat_jump"
+   }
+  },
+  {
+   "source_id": "Standing_Long_Jump",
+   "name_en": "Standing Long Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "This drill is best done in sand or other soft landing surface. Ensure that you are able to measure distance. Stand in a partial squat stance with feet shoulder width apart. Utilizing a big arm swing and a countermovement of the legs, jump forward as far as you can. Attempt to land with your feet…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Standing_Long_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Standing_Towel_Triceps_Extension",
+   "name_en": "Standing Towel Triceps Extension",
+   "name_ko": null,
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [],
+   "part": "상체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "step"
+   ],
+   "instructions": "To begin, stand up with both arms fully extended above the head holding one end of a towel with both hands. Your elbows should be in and the arms perpendicular to the floor with the palms facing each other while your feet should be shoulder width apart from each other. This is the starting…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Standing_Towel_Triceps_Extension.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Star_Jump",
+   "name_en": "Star Jump",
+   "name_ko": null,
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "calves",
+    "glutes",
+    "hamstrings",
+    "shoulders"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "plyometrics",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [],
+   "instructions": "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body. To initiate the move, squat down halfway and explode back up as high as possible. Fully extend your entire body, spreading your legs and arms away from the body. As you land, bring your limbs back in…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Star_Jump.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Step-up_with_Knee_Raise",
+   "name_en": "Step-up with Knee Raise",
+   "name_ko": null,
+   "primary_muscles": [
+    "glutes"
+   ],
+   "secondary_muscles": [
+    "hamstrings",
+    "quadriceps"
+   ],
+   "part": "하체",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "compound",
+   "force": "push",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "bench",
+    "step"
+   ],
+   "instructions": "Stand facing a box or bench of an appropriate height with your feet together. This will be your starting position. Begin the movement by stepping up, putting your left foot on the top of the bench. Extend through the hip and knee of your front leg to stand up on the box. As you stand on the box…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Step-up_with_Knee_Raise.json",
+   "in_our_data": false,
+   "overlap": null
+  },
+  {
+   "source_id": "Tuck_Crunch",
+   "name_en": "Tuck Crunch",
+   "name_ko": null,
+   "primary_muscles": [
+    "abdominals"
+   ],
+   "secondary_muscles": [],
+   "part": "코어",
+   "level": "초급",
+   "level_raw": "beginner",
+   "category": "strength",
+   "mechanic": "isolation",
+   "force": "pull",
+   "equipment_raw": "body only",
+   "needs_furniture": [
+    "elevat"
+   ],
+   "instructions": "To begin, lie down on the floor or an exercise mat with your back pressed against the floor. Your arms should be lying across your sides with the palms facing down. Your legs should be crossed by wrapping one ankle around the other. Slowly elevate your legs up in the air until your thighs are…",
+   "license": "Unlicense (public domain dedication)",
+   "source_url": "https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Tuck_Crunch.json",
+   "in_our_data": false,
+   "overlap": {
+    "type": "variant",
+    "our_id": "crunch"
+   }
+  }
+ ]
+}

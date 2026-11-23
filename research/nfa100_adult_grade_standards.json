@@ -1,0 +1,566 @@
+{
+ "source": "국민체력100 인증기준 (서울올림픽기념국민체육진흥공단)",
+ "source_url": "https://nfa.kspo.or.kr/reserve/0/selectMeasureGradeItemListByAgeSe.kspo",
+ "accessed": "2026-11-17",
+ "note": "성인기(만19~64세) 1·2·3등급 기준값. 표 값은 해당 등급의 기준(이상/이하 방향은 항목별로 다름: 횟수·거리·VO2max·악력·유연성은 이상, 달리기 시간·반응시간은 이하로 해석). 3등급은 신체조성(BMI·체지방률) 조건 포함. 4등급=심폐지구력과 근력이 3등급 이상, 5등급=심폐지구력 또는 근력이 3등급 이상, 6등급=그 외. 웹 페이지에서 숫자만 추출했으며 이상/이하 방향과 측정 방법은 원문으로 다시 확인해야 함.",
+ "columns": {
+  "shuttle_run_20m_reps": "20m 왕복오래달리기(회)",
+  "treadmill_step_vo2max_ml_kg_min": "트레드밀/스텝검사(ml/kg/min)",
+  "relative_grip_pct": "상대악력(%)",
+  "cross_situp_reps": "교차윗몸일으키기(회)",
+  "sit_and_reach_cm": "앉아윗몸앞으로굽히기(cm)",
+  "shuttle_10m_sec": "10m 왕복달리기(초)",
+  "reaction_time_sec": "반응시간(초)",
+  "standing_long_jump_cm": "제자리멀리뛰기(cm)",
+  "air_time_sec": "체공시간(초)"
+ },
+ "grade_3_body_composition": {
+  "BMI_range": "18.5 이상 25 미만 (남녀 공통)",
+  "body_fat_pct_range": {
+   "M": "7% 초과 27% 미만",
+   "F": "16% 초과 37% 미만"
+  }
+ },
+ "grades": {
+  "1": {
+   "M": {
+    "19~24": {
+     "shuttle_run_20m_reps": 62.0,
+     "treadmill_step_vo2max_ml_kg_min": 47.6,
+     "relative_grip_pct": 62.6,
+     "cross_situp_reps": 55.0,
+     "sit_and_reach_cm": 16.1,
+     "shuttle_10m_sec": 9.9,
+     "reaction_time_sec": 0.301,
+     "standing_long_jump_cm": 229.0,
+     "air_time_sec": 0.605
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 54.0,
+     "treadmill_step_vo2max_ml_kg_min": 44.8,
+     "relative_grip_pct": 62.4,
+     "cross_situp_reps": 51.0,
+     "sit_and_reach_cm": 14.9,
+     "shuttle_10m_sec": 10.3,
+     "reaction_time_sec": 0.302,
+     "standing_long_jump_cm": 223.0,
+     "air_time_sec": 0.591
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 49.0,
+     "treadmill_step_vo2max_ml_kg_min": 42.9,
+     "relative_grip_pct": 62.6,
+     "cross_situp_reps": 47.0,
+     "sit_and_reach_cm": 14.2,
+     "shuttle_10m_sec": 10.6,
+     "reaction_time_sec": 0.304,
+     "standing_long_jump_cm": 219.0,
+     "air_time_sec": 0.583
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 45.0,
+     "treadmill_step_vo2max_ml_kg_min": 41.8,
+     "relative_grip_pct": 62.1,
+     "cross_situp_reps": 45.0,
+     "sit_and_reach_cm": 14.0,
+     "shuttle_10m_sec": 10.9,
+     "reaction_time_sec": 0.311,
+     "standing_long_jump_cm": 214.0,
+     "air_time_sec": 0.581
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 42.0,
+     "treadmill_step_vo2max_ml_kg_min": 40.9,
+     "relative_grip_pct": 62.8,
+     "cross_situp_reps": 44.0,
+     "sit_and_reach_cm": 14.2,
+     "shuttle_10m_sec": 11.0,
+     "reaction_time_sec": 0.32,
+     "standing_long_jump_cm": 209.0,
+     "air_time_sec": 0.547
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 40.0,
+     "treadmill_step_vo2max_ml_kg_min": 40.1,
+     "relative_grip_pct": 62.0,
+     "cross_situp_reps": 41.0,
+     "sit_and_reach_cm": 13.6,
+     "shuttle_10m_sec": 11.3,
+     "reaction_time_sec": 0.331,
+     "standing_long_jump_cm": 202.0,
+     "air_time_sec": 0.524
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 35.0,
+     "treadmill_step_vo2max_ml_kg_min": 38.8,
+     "relative_grip_pct": 60.5,
+     "cross_situp_reps": 38.0,
+     "sit_and_reach_cm": 13.9,
+     "shuttle_10m_sec": 11.8,
+     "reaction_time_sec": 0.337,
+     "standing_long_jump_cm": 192.0,
+     "air_time_sec": 0.527
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 31.0,
+     "treadmill_step_vo2max_ml_kg_min": 37.7,
+     "relative_grip_pct": 59.4,
+     "cross_situp_reps": 35.0,
+     "sit_and_reach_cm": 13.3,
+     "shuttle_10m_sec": 12.3,
+     "reaction_time_sec": 0.348,
+     "standing_long_jump_cm": 183.0,
+     "air_time_sec": 0.508
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 26.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.3,
+     "relative_grip_pct": 56.8,
+     "cross_situp_reps": 31.0,
+     "sit_and_reach_cm": 11.8,
+     "shuttle_10m_sec": 13.1,
+     "reaction_time_sec": 0.351,
+     "standing_long_jump_cm": 170.0,
+     "air_time_sec": 0.474
+    }
+   },
+   "F": {
+    "19~24": {
+     "shuttle_run_20m_reps": 30.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.8,
+     "relative_grip_pct": 46.8,
+     "cross_situp_reps": 36.0,
+     "sit_and_reach_cm": 19.7,
+     "shuttle_10m_sec": 12.3,
+     "reaction_time_sec": 0.332,
+     "standing_long_jump_cm": 162.0,
+     "air_time_sec": 0.479
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 28.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.0,
+     "relative_grip_pct": 47.0,
+     "cross_situp_reps": 33.0,
+     "sit_and_reach_cm": 18.5,
+     "shuttle_10m_sec": 12.7,
+     "reaction_time_sec": 0.343,
+     "standing_long_jump_cm": 156.0,
+     "air_time_sec": 0.466
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 26.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.8,
+     "relative_grip_pct": 49.6,
+     "cross_situp_reps": 31.0,
+     "sit_and_reach_cm": 18.2,
+     "shuttle_10m_sec": 12.9,
+     "reaction_time_sec": 0.347,
+     "standing_long_jump_cm": 154.0,
+     "air_time_sec": 0.464
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 25.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.2,
+     "relative_grip_pct": 47.5,
+     "cross_situp_reps": 31.0,
+     "sit_and_reach_cm": 18.9,
+     "shuttle_10m_sec": 13.0,
+     "reaction_time_sec": 0.348,
+     "standing_long_jump_cm": 155.0,
+     "air_time_sec": 0.453
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 24.0,
+     "treadmill_step_vo2max_ml_kg_min": 33.8,
+     "relative_grip_pct": 47.1,
+     "cross_situp_reps": 30.0,
+     "sit_and_reach_cm": 18.8,
+     "shuttle_10m_sec": 13.1,
+     "reaction_time_sec": 0.345,
+     "standing_long_jump_cm": 153.0,
+     "air_time_sec": 0.442
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 23.0,
+     "treadmill_step_vo2max_ml_kg_min": 33.0,
+     "relative_grip_pct": 46.2,
+     "cross_situp_reps": 28.0,
+     "sit_and_reach_cm": 18.9,
+     "shuttle_10m_sec": 13.4,
+     "reaction_time_sec": 0.35,
+     "standing_long_jump_cm": 148.0,
+     "air_time_sec": 0.431
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 21.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.3,
+     "relative_grip_pct": 44.7,
+     "cross_situp_reps": 24.0,
+     "sit_and_reach_cm": 19.5,
+     "shuttle_10m_sec": 13.8,
+     "reaction_time_sec": 0.354,
+     "standing_long_jump_cm": 138.0,
+     "air_time_sec": 0.407
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 18.0,
+     "treadmill_step_vo2max_ml_kg_min": 31.3,
+     "relative_grip_pct": 43.2,
+     "cross_situp_reps": 20.0,
+     "sit_and_reach_cm": 19.5,
+     "shuttle_10m_sec": 14.5,
+     "reaction_time_sec": 0.369,
+     "standing_long_jump_cm": 129.0,
+     "air_time_sec": 0.402
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 15.0,
+     "treadmill_step_vo2max_ml_kg_min": 30.2,
+     "relative_grip_pct": 41.9,
+     "cross_situp_reps": 17.0,
+     "sit_and_reach_cm": 19.6,
+     "shuttle_10m_sec": 15.3,
+     "reaction_time_sec": 0.387,
+     "standing_long_jump_cm": 120.0,
+     "air_time_sec": 0.393
+    }
+   }
+  },
+  "2": {
+   "M": {
+    "19~24": {
+     "shuttle_run_20m_reps": 52.0,
+     "treadmill_step_vo2max_ml_kg_min": 44.8,
+     "relative_grip_pct": 57.2,
+     "cross_situp_reps": 48.0,
+     "sit_and_reach_cm": 11.1,
+     "shuttle_10m_sec": 10.9,
+     "reaction_time_sec": 0.33,
+     "standing_long_jump_cm": 213.0,
+     "air_time_sec": 0.568
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 44.0,
+     "treadmill_step_vo2max_ml_kg_min": 42.2,
+     "relative_grip_pct": 57.0,
+     "cross_situp_reps": 45.0,
+     "sit_and_reach_cm": 10.1,
+     "shuttle_10m_sec": 11.2,
+     "reaction_time_sec": 0.335,
+     "standing_long_jump_cm": 208.0,
+     "air_time_sec": 0.559
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 40.0,
+     "treadmill_step_vo2max_ml_kg_min": 40.6,
+     "relative_grip_pct": 57.2,
+     "cross_situp_reps": 41.0,
+     "sit_and_reach_cm": 9.4,
+     "shuttle_10m_sec": 11.6,
+     "reaction_time_sec": 0.337,
+     "standing_long_jump_cm": 204.0,
+     "air_time_sec": 0.548
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 37.0,
+     "treadmill_step_vo2max_ml_kg_min": 39.5,
+     "relative_grip_pct": 56.6,
+     "cross_situp_reps": 39.0,
+     "sit_and_reach_cm": 9.3,
+     "shuttle_10m_sec": 11.9,
+     "reaction_time_sec": 0.339,
+     "standing_long_jump_cm": 199.0,
+     "air_time_sec": 0.551
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 35.0,
+     "treadmill_step_vo2max_ml_kg_min": 38.8,
+     "relative_grip_pct": 57.2,
+     "cross_situp_reps": 38.0,
+     "sit_and_reach_cm": 9.5,
+     "shuttle_10m_sec": 12.1,
+     "reaction_time_sec": 0.346,
+     "standing_long_jump_cm": 195.0,
+     "air_time_sec": 0.521
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 32.0,
+     "treadmill_step_vo2max_ml_kg_min": 38.1,
+     "relative_grip_pct": 56.7,
+     "cross_situp_reps": 36.0,
+     "sit_and_reach_cm": 9.1,
+     "shuttle_10m_sec": 12.5,
+     "reaction_time_sec": 0.366,
+     "standing_long_jump_cm": 188.0,
+     "air_time_sec": 0.497
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 28.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.9,
+     "relative_grip_pct": 55.3,
+     "cross_situp_reps": 32.0,
+     "sit_and_reach_cm": 9.3,
+     "shuttle_10m_sec": 13.0,
+     "reaction_time_sec": 0.371,
+     "standing_long_jump_cm": 177.0,
+     "air_time_sec": 0.486
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 25.0,
+     "treadmill_step_vo2max_ml_kg_min": 35.9,
+     "relative_grip_pct": 54.2,
+     "cross_situp_reps": 29.0,
+     "sit_and_reach_cm": 8.6,
+     "shuttle_10m_sec": 13.7,
+     "reaction_time_sec": 0.383,
+     "standing_long_jump_cm": 168.0,
+     "air_time_sec": 0.475
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 20.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.8,
+     "relative_grip_pct": 51.7,
+     "cross_situp_reps": 25.0,
+     "sit_and_reach_cm": 7.1,
+     "shuttle_10m_sec": 14.6,
+     "reaction_time_sec": 0.402,
+     "standing_long_jump_cm": 154.0,
+     "air_time_sec": 0.443
+    }
+   },
+   "F": {
+    "19~24": {
+     "shuttle_run_20m_reps": 25.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.8,
+     "relative_grip_pct": 42.4,
+     "cross_situp_reps": 30.0,
+     "sit_and_reach_cm": 14.9,
+     "shuttle_10m_sec": 13.2,
+     "reaction_time_sec": 0.374,
+     "standing_long_jump_cm": 149.0,
+     "air_time_sec": 0.447
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 23.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.1,
+     "relative_grip_pct": 42.6,
+     "cross_situp_reps": 27.0,
+     "sit_and_reach_cm": 13.8,
+     "shuttle_10m_sec": 13.6,
+     "reaction_time_sec": 0.383,
+     "standing_long_jump_cm": 144.0,
+     "air_time_sec": 0.442
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 21.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.9,
+     "relative_grip_pct": 45.2,
+     "cross_situp_reps": 25.0,
+     "sit_and_reach_cm": 13.8,
+     "shuttle_10m_sec": 13.9,
+     "reaction_time_sec": 0.381,
+     "standing_long_jump_cm": 142.0,
+     "air_time_sec": 0.437
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 20.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.3,
+     "relative_grip_pct": 43.1,
+     "cross_situp_reps": 25.0,
+     "sit_and_reach_cm": 14.5,
+     "shuttle_10m_sec": 13.9,
+     "reaction_time_sec": 0.388,
+     "standing_long_jump_cm": 144.0,
+     "air_time_sec": 0.425
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 20.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.0,
+     "relative_grip_pct": 42.8,
+     "cross_situp_reps": 25.0,
+     "sit_and_reach_cm": 14.6,
+     "shuttle_10m_sec": 14.0,
+     "reaction_time_sec": 0.382,
+     "standing_long_jump_cm": 142.0,
+     "air_time_sec": 0.417
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 18.0,
+     "treadmill_step_vo2max_ml_kg_min": 31.4,
+     "relative_grip_pct": 41.9,
+     "cross_situp_reps": 22.0,
+     "sit_and_reach_cm": 14.8,
+     "shuttle_10m_sec": 14.4,
+     "reaction_time_sec": 0.392,
+     "standing_long_jump_cm": 136.0,
+     "air_time_sec": 0.404
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 16.0,
+     "treadmill_step_vo2max_ml_kg_min": 30.7,
+     "relative_grip_pct": 40.6,
+     "cross_situp_reps": 19.0,
+     "sit_and_reach_cm": 15.6,
+     "shuttle_10m_sec": 14.9,
+     "reaction_time_sec": 0.395,
+     "standing_long_jump_cm": 126.0,
+     "air_time_sec": 0.381
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 14.0,
+     "treadmill_step_vo2max_ml_kg_min": 29.8,
+     "relative_grip_pct": 39.2,
+     "cross_situp_reps": 15.0,
+     "sit_and_reach_cm": 15.7,
+     "shuttle_10m_sec": 15.8,
+     "reaction_time_sec": 0.416,
+     "standing_long_jump_cm": 117.0,
+     "air_time_sec": 0.374
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 12.0,
+     "treadmill_step_vo2max_ml_kg_min": 29.0,
+     "relative_grip_pct": 38.0,
+     "cross_situp_reps": 12.0,
+     "sit_and_reach_cm": 15.7,
+     "shuttle_10m_sec": 16.8,
+     "reaction_time_sec": 0.434,
+     "standing_long_jump_cm": 107.0,
+     "air_time_sec": 0.366
+    }
+   }
+  },
+  "3": {
+   "M": {
+    "19~24": {
+     "shuttle_run_20m_reps": 41.0,
+     "treadmill_step_vo2max_ml_kg_min": 42.0,
+     "relative_grip_pct": 51.8,
+     "cross_situp_reps": 42.0,
+     "sit_and_reach_cm": 6.1
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 34.0,
+     "treadmill_step_vo2max_ml_kg_min": 39.6,
+     "relative_grip_pct": 51.6,
+     "cross_situp_reps": 38.0,
+     "sit_and_reach_cm": 5.3
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 31.0,
+     "treadmill_step_vo2max_ml_kg_min": 38.2,
+     "relative_grip_pct": 51.8,
+     "cross_situp_reps": 35.0,
+     "sit_and_reach_cm": 4.6
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 28.0,
+     "treadmill_step_vo2max_ml_kg_min": 37.2,
+     "relative_grip_pct": 51.1,
+     "cross_situp_reps": 33.0,
+     "sit_and_reach_cm": 4.6
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 27.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.6,
+     "relative_grip_pct": 51.6,
+     "cross_situp_reps": 32.0,
+     "sit_and_reach_cm": 4.8
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 24.0,
+     "treadmill_step_vo2max_ml_kg_min": 36.0,
+     "relative_grip_pct": 51.4,
+     "cross_situp_reps": 30.0,
+     "sit_and_reach_cm": 4.6
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 21.0,
+     "treadmill_step_vo2max_ml_kg_min": 35.0,
+     "relative_grip_pct": 50.1,
+     "cross_situp_reps": 26.0,
+     "sit_and_reach_cm": 4.7
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 18.0,
+     "treadmill_step_vo2max_ml_kg_min": 34.1,
+     "relative_grip_pct": 49.0,
+     "cross_situp_reps": 23.0,
+     "sit_and_reach_cm": 3.9
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 15.0,
+     "treadmill_step_vo2max_ml_kg_min": 33.2,
+     "relative_grip_pct": 46.6,
+     "cross_situp_reps": 19.0,
+     "sit_and_reach_cm": 2.3
+    }
+   },
+   "F": {
+    "19~24": {
+     "shuttle_run_20m_reps": 19.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.8,
+     "relative_grip_pct": 38.0,
+     "cross_situp_reps": 23.0,
+     "sit_and_reach_cm": 10.1
+    },
+    "25~29": {
+     "shuttle_run_20m_reps": 17.0,
+     "treadmill_step_vo2max_ml_kg_min": 32.2,
+     "relative_grip_pct": 38.2,
+     "cross_situp_reps": 21.0,
+     "sit_and_reach_cm": 9.1
+    },
+    "30~34": {
+     "shuttle_run_20m_reps": 16.0,
+     "treadmill_step_vo2max_ml_kg_min": 31.0,
+     "relative_grip_pct": 40.8,
+     "cross_situp_reps": 19.0,
+     "sit_and_reach_cm": 9.4
+    },
+    "35~39": {
+     "shuttle_run_20m_reps": 15.0,
+     "treadmill_step_vo2max_ml_kg_min": 30.5,
+     "relative_grip_pct": 38.7,
+     "cross_situp_reps": 19.0,
+     "sit_and_reach_cm": 10.1
+    },
+    "40~44": {
+     "shuttle_run_20m_reps": 15.0,
+     "treadmill_step_vo2max_ml_kg_min": 30.3,
+     "relative_grip_pct": 38.5,
+     "cross_situp_reps": 19.0,
+     "sit_and_reach_cm": 10.4
+    },
+    "45~49": {
+     "shuttle_run_20m_reps": 14.0,
+     "treadmill_step_vo2max_ml_kg_min": 29.7,
+     "relative_grip_pct": 37.6,
+     "cross_situp_reps": 16.0,
+     "sit_and_reach_cm": 10.7
+    },
+    "50~54": {
+     "shuttle_run_20m_reps": 12.0,
+     "treadmill_step_vo2max_ml_kg_min": 29.1,
+     "relative_grip_pct": 36.5,
+     "cross_situp_reps": 13.0,
+     "sit_and_reach_cm": 11.7
+    },
+    "55~59": {
+     "shuttle_run_20m_reps": 11.0,
+     "treadmill_step_vo2max_ml_kg_min": 28.4,
+     "relative_grip_pct": 35.2,
+     "cross_situp_reps": 9.0,
+     "sit_and_reach_cm": 11.9
+    },
+    "60~64": {
+     "shuttle_run_20m_reps": 9.0,
+     "treadmill_step_vo2max_ml_kg_min": 27.7,
+     "relative_grip_pct": 34.1,
+     "cross_situp_reps": 7.0,
+     "sit_and_reach_cm": 11.8
+    }
+   }
+  }
+ }
+}

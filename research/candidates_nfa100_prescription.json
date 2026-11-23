@@ -1,0 +1,41 @@
+{
+ "source": {
+  "name": "국민체력100 운동처방 빈도 (논문 집계값)",
+  "citation": "Yun HJ, Lee O. Analysis of Exercise Prescription Status and Patterns by Health and Physical Fitness Level of Korean Adults: Applying Korea National Fitness Award Data. Korean Journal of Sport Science 2025;36(3):288-297. doi:10.24985/kjss.2025.36.3.288",
+  "url": "https://kjss.sports.re.kr/assets/pdf/948/journal-36-3-288.pdf",
+  "license": "논문 CC BY-NC 4.0 (출처표시·비영리). 아래 숫자는 논문 표의 사실값을 인용한 것이며 원자료(개인 단위)는 공개되지 않음",
+  "underlying_data": "국민체육진흥공단이 연구진에게 제공한 2018.1~2023.4 국민체력100 체력측정·운동처방 데이터(1,145,612명 중 성인 475,555명). 운동처방 종류 617개",
+  "accessed": "2026-11-17"
+ },
+ "meta": {
+  "filter": "논문 Table 4(전체 상위 20)와 Table 5·7(체력요인별 특이 처방)에서 기구 없이 집에서 가능한 맨몸운동만 남김",
+  "name_en": "논문 영문 표기 그대로",
+  "name_ko": "논문 본문에 한국어로 나온 경우만 기입. null이면 본문에 한국어 표기가 없음",
+  "maps_to": "팀(조사자)의 해석: 동작 이름으로 추정한 일반 운동명. 국민체력100 영상으로 실제 동작을 확인해야 함",
+  "n": "처방 빈도(건수)",
+  "specificity": "해당 체력요인 미달자에게 처방된 비율(n / 전체 n). 논문 Table 5·7 값"
+ },
+ "items": [
+  {"source_id": "nfa100_top20_rank1", "rank_overall": 1, "name_en": "Sit-to-stand", "name_ko": "앉았다일어서기", "n": 121244, "maps_to": "bodyweight squat (맨몸 스쿼트)", "part": "하체", "level": null, "in_our_data": true, "our_id": "bodyweight_squat", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank2", "rank_overall": 2, "name_en": "Down hold", "name_ko": "엎드려버티기", "n": 118648, "maps_to": "plank (플랭크)", "part": "코어", "level": null, "in_our_data": true, "our_id": "plank", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank3", "rank_overall": 3, "name_en": "Sit-up", "name_ko": "윗몸올리기", "n": 101289, "maps_to": "sit-up / crunch", "part": "코어", "level": null, "in_our_data": true, "our_id": "crunch", "note": "윗몸일으키기(풀 싯업)인지 크런치인지 이름만으로는 불확실", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank5", "rank_overall": 5, "name_en": "Push-up", "name_ko": "팔굽혀펴기", "n": 78935, "maps_to": "push-up (푸시업)", "part": "상체", "level": null, "in_our_data": true, "our_id": "push_up", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank7", "rank_overall": 7, "name_en": "Sit-to-stand with one foot forward", "name_ko": null, "n": 77198, "maps_to": "split squat (스플릿 스쿼트, 제자리 런지)", "part": "하체", "level": null, "in_our_data": false, "our_id": null, "note": "우리 데이터의 reverse_lunge·bulgarian_split_squat 사이 난이도. 한국어 명칭은 논문 본문에 없음", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank8", "rank_overall": 8, "name_en": "Lying hip raise", "name_ko": "누워서엉덩이들어올리기", "n": 67770, "maps_to": "glute bridge (글루트 브릿지)", "part": "하체", "level": null, "in_our_data": true, "our_id": "glute_bridge", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank13", "rank_overall": 13, "name_en": "Lying leg raise", "name_ko": "누워서다리들어올리기", "n": 40206, "specificity": {"근지구력 미달": 0.440}, "maps_to": "lying leg raise (레그 레이즈)", "part": "코어", "level": null, "in_our_data": false, "our_id": null, "note": "근지구력 미달자에게 가장 특이적으로 처방된 운동(Table 7, n=17,683, 비율 0.440)", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank14", "rank_overall": 14, "name_en": "Burpee", "name_ko": "버피", "n": 39040, "maps_to": "burpee (버피)", "part": null, "part_note": "전신(유산소+근력)", "level": null, "in_our_data": false, "our_id": null, "note": "점프·착지가 있어 우리 규칙상 joint_load '높음' 후보", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank19", "rank_overall": 19, "name_en": "Lying arm and leg raise", "name_ko": "누워서팔다리동시에들어올리기", "n": 33996, "specificity": {"근지구력 미달": 0.433}, "maps_to": "불확실: V-up / 할로우 홀드류로 추정", "part": "코어", "level": null, "in_our_data": null, "our_id": "v_up?", "note": "동작 확인 필요(국민체력100 영상)", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_top20_rank20", "rank_overall": 20, "name_en": "Standing upper body raise", "name_ko": null, "n": 33035, "maps_to": "불확실(서서 하는 상체 들기, 동작 확인 필요)", "part": null, "level": null, "in_our_data": null, "our_id": null, "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_endurance_sky_bike", "rank_overall": null, "name_en": "Lying sky bike", "name_ko": "누워서하늘자전거", "n": 5262, "specificity": {"근지구력 미달": 0.418}, "maps_to": "bicycle crunch (바이시클 크런치)", "part": "코어", "level": null, "in_our_data": false, "our_id": null, "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_endurance_quadruped", "rank_overall": null, "name_en": "Lifting arms and legs in quadruped position", "name_ko": "네발기기자세로팔다리들기", "n": 12605, "specificity": {"근지구력 미달": 0.400}, "maps_to": "bird dog (버드독)", "part": "코어", "level": null, "in_our_data": true, "our_id": "bird_dog", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_endurance_prone_raise", "rank_overall": null, "name_en": "Living [prone] arm and leg raise", "name_ko": "엎드려서팔다리들기", "n": 13336, "specificity": {"근지구력 미달": 0.392}, "maps_to": "superman (슈퍼맨, 엎드려 팔다리 들기)", "part": "코어", "level": null, "in_our_data": false, "our_id": null, "note": "논문 영문 표의 'Living'은 본문 한국어(엎드려서)로 보아 오타로 추정", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"},
+  {"source_id": "nfa100_strength_backward_pushup", "rank_overall": null, "name_en": "Backward push-up", "name_ko": null, "n": 5863, "specificity": {"근력 미달": 0.277}, "maps_to": "chair/bench dip (의자 딥스)로 추정", "part": "상체", "level": null, "in_our_data": true, "our_id": "chair_dip", "note": "이름만으로 추정, 동작 확인 필요", "license": "CC BY-NC 4.0 (논문)", "source_url": "https://doi.org/10.24985/kjss.2025.36.3.288"}
+ ],
+ "excluded_not_bodyweight": [
+  "Running 달리기(4위)", "Stationary bike/Indoor cycling 실내자전거타기(6위)", "Swimming 수영(9위)", "Stair climbing 계단올라갔다내려오기(10위)",
+  "Walking on a treadmill 트레드밀에서걷기(11위)", "Rope jumping 줄넘기(12위)", "Sit pull-down 앉아서당겨내리기(15위, 기구로 추정)",
+  "Sit leg push 앉아서다리밀기(16위, 기구로 추정)", "Hind thigh stretch / Sit leg stretch(17·18위, 스트레칭 또는 기구로 추정)",
+  "Elbow bend 팔꿈치굽히기 / Lift the water bottle sideways 물병옆으로들어올리기 / Bend waist and raise arms behind 허리굽혀팔뒤로들기 (근력 미달 특이 처방, 물병 등 소도구 사용)",
+  "Sit push 앉아서밀기(기구로 추정)"
+ ]
+}
