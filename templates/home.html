@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "macros.html" import icon, thumb, tabbar %}
+{% block body %}
+{% if stage == 'g2' %}
+<div class="alert-bar" role="alert">{{ icon('warn', 18) }}{{ gap }}일 동안 운동 기록이 없어요</div>
+{% endif %}
+
+<header class="home-head">
+  <div class="row">
+    <span class="brand">홈핏 메이트</span>
+    <a class="icon-btn" href="{{ url_for('setup.edit') }}" aria-label="설정: 내 정보 수정" style="margin-right: -10px">{{ icon('settings', 22, 1.8) }}</a>
+  </div>
+  <div class="week" aria-label="이번 주 운동">
+    {% for d, mark in week %}
+    <div class="d">
+      <span class="lbl">{{ '월화수목금토일'[loop.index0] }}</span>
+      <span class="day {{ mark }} num" {% if mark == 'today' or d == today %}aria-current="date"{% endif %}
+            title="{{ {'done': '완료', 'stopped': '중단', 'today': '오늘', 'later': '', 'empty': '쉰 날'}[mark] }}">{{ d.day }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</header>
+
+<section class="card hero">
+  <div class="txt">
+    {% if stage == 'g0' and streak > 0 %}
+      <span class="eyebrow">연속 운동</span>
+      <h1><span class="accent">{{ streak }}일째</span><span>이어가는 중</span></h1>
+      <p>{% if done_today %}오늘 운동 완료! 내일도 만나요{% else %}오늘 하면 {{ streak + 1 }}일 연속이에요{% endif %}</p>
+    {% elif stage == 'g0' and not has_records %}
+      <span class="eyebrow">반가워요</span>
+      <h1><span class="accent">첫 운동</span><span>시작해 볼까요?</span></h1>
+      <p>아래 재생 버튼을 누르면 오늘의 루틴이 나와요</p>
+    {% else %}
+      <span class="eyebrow">마지막 운동 후</span>
+      <h1><span style="color: {{ '#B42318' if stage == 'g2' else ('#111111' if stage == 'g3' else '#1C7460') }}">{{ gap }}일째</span><span>쉬는 중</span></h1>
+      <p>{{ {'g0': '오늘 하면 다시 연속이 시작돼요', 'g1': '오늘은 운동할까요?', 'g2': '2주가 되면 화면이 흑백이 돼요', 'g3': '운동을 한 번 끝내면 색이 돌아와요'}[stage] }}</p>
+    {% endif %}
+  </div>
+  <div class="bear-circle {{ mood }}" style="background: {{ {'happy': '#D8F7EE', 'sad': '#ECE7E6', 'angry': '#FDECEA', 'fallen': '#E6E1E0'}[mood] }}">
+    <img src="{{ url_for('static', filename='img/bear/' ~ mood ~ '.svg') }}" alt="{{ {'happy': '웃는 곰', 'sad': '시무룩한 곰', 'angry': '화난 곰', 'fallen': '엎드려 잠든 곰'}[mood] }}">
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>오늘의 루틴</h2>
+    <a class="more" href="{{ url_for('routine.show') }}">전체 보기{{ icon('next', 16) }}</a>
+  </div>
+  <div class="card">
+    <ul class="list">
+      {% for it in routine['items'][:3] %}
+      {% set ex = by_id[it.id] %}
+      <li class="ex-row" style="padding: 10px 0">
+        {{ thumb(ex.part, small=true) }}
+        <div class="grow" style="gap: 1px">
+          <span class="ex-name">{{ ex.name }}</span>
+          <span class="ex-sub">{{ ex.part }}</span>
+        </div>
+        <span class="ex-dose num">{{ it | dose }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="list-foot" style="margin: 0 16px">
+      <span>{{ routine.level }} · 운동 {{ routine['items'] | length }}개</span>
+      <strong>약 {{ minutes | minutes }}</strong>
+    </div>
+  </div>
+</section>
+
+<p class="disclaimer" style="margin: 12px 20px 0">{{ DISCLAIMER }}</p>
+
+{{ tabbar('home') }}
+{% endblock %}

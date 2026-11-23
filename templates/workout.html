@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% from "macros.html" import icon, play, progress %}
+{% block title %}{{ ex.name }} · 운동 중{% endblock %}
+{% block app_class %}screen-dark{% endblock %}
+{% block body %}
+{% set total = state['items'] | length %}
+<header class="run-head">
+  <form method="post" action="{{ url_for('workout.stop') }}" onsubmit="return confirm('운동을 그만할까요? 지금까지 한 세트는 기록돼요.')">
+    <button class="icon-btn" type="submit" aria-label="그만하기" style="color: #FFFFFF">{{ icon('close', 22) }}</button>
+  </form>
+  <span class="count num">{{ state['i'] + 1 }} / {{ total }}</span>
+  <span></span>
+</header>
+{{ progress(state, '#4DFFCF', 'rgba(255, 255, 255, .18)') }}
+
+<div class="video-box">
+  {% if video %}
+    <video src="{{ video }}" controls playsinline loop preload="metadata" aria-label="{{ ex.name }} 시범 영상"></video>
+  {% else %}
+    <div class="empty">{{ icon('film', 32, 1.8) }}영상 준비 중이에요<span style="font-weight: 400; font-size: 12px">아래 설명을 보고 따라 해 주세요</span></div>
+  {% endif %}
+</div>
+
+<main class="sheet">
+  <span class="grip" aria-hidden="true"></span>
+  <div class="sheet-head">
+    <h1>{{ ex.name }}</h1>
+    <span class="chip chip-mint num">세트 {{ state['set'] }} / {{ item['sets'] }}</span>
+  </div>
+  <div class="big">
+    <span class="n num" id="count" data-seconds="{{ item['reps'] if item['unit'] == '초' else '' }}">{{ item['reps'] }}</span>
+    <span class="u">{{ '초' if item['unit'] == '초' else '회' }}</span>
+  </div>
+  <p class="desc">{{ ex.description }}</p>
+  {% if ex.cautions %}<p class="note note-danger" style="margin-top: 12px">{{ icon('info', 16) }}{{ ex.cautions }}</p>{% endif %}
+
+  <div class="actions">
+    <form method="post" action="{{ url_for('workout.set_done') }}" id="set-done">
+      {% if item['unit'] == '초' %}
+        {# 시간형: 타이머를 켜고 0초가 되면 자동으로 세트 완료(D-5) #}
+        <button class="cta" type="button" id="timer-btn">타이머 시작</button>
+        <button class="text-btn" type="submit" style="width: 100%">타이머 없이 세트 완료</button>
+      {% else %}
+        <button class="cta" type="submit">세트 완료</button>
+      {% endif %}
+    </form>
+    <form method="post" action="{{ url_for('workout.skip') }}" style="display: flex; justify-content: center">
+      <button class="text-btn" type="submit">이 운동 건너뛰기</button>
+    </form>
+    <p class="disclaimer">{{ DISCLAIMER }}</p>
+  </div>
+</main>
+{% endblock %}
+{% block scripts %}
+{% if item['unit'] == '초' %}
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+<script>
+  HomefitTimer.workTimer({
+    seconds: {{ item['reps'] }},
+    display: document.getElementById('count'),
+    button: document.getElementById('timer-btn'),
+    form: document.getElementById('set-done'),
+  });
+</script>
+{% endif %}
+{% endblock %}

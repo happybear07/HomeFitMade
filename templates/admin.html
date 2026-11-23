@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "macros.html" import back, icon, thumb %}
+{% block title %}시범 영상 관리 · 홈핏 메이트{% endblock %}
+{% block body %}
+<header class="topbar">{{ back(url_for('setup.edit')) }}</header>
+<section class="page-title">
+  <h1>시범 영상 관리</h1>
+  <p>운동마다 직접 찍은 영상을 올려요</p>
+</section>
+
+<form class="card upload" method="post" enctype="multipart/form-data" action="{{ url_for('admin.upload') }}">
+  <div style="display: flex; flex-direction: column; gap: 6px">
+    <label for="ex" class="field-label">운동</label>
+    <select id="ex" name="exercise_id" required>
+      <option value="" disabled {{ 'selected' if not selected }}>운동을 골라 주세요</option>
+      {% for e, ok in rows %}
+      <option value="{{ e.id }}" {{ 'selected' if e.id == selected }}>{{ e.name }} ({{ e.part }}){{ ' · 등록됨' if ok }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <label class="drop" for="file">
+    <span class="icon" style="color: #1C7460">{{ icon('upload', 22, 2) }}</span>
+    <strong id="file-name">영상 파일 선택</strong>
+    <span class="small">mp4 · 최대 {{ max_mb }}MB · 같은 운동에 다시 올리면 바뀌어요</span>
+    <input id="file" name="video" type="file" accept="video/mp4,.mp4" required>
+  </label>
+  <button class="cta" type="submit" style="height: 52px">업로드</button>
+</form>
+
+<section class="section" style="margin-top: 20px; margin-bottom: 24px">
+  <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 10px">
+    <h2 style="margin: 0; font-size: 18px; font-weight: 800; letter-spacing: -0.02em">운동 목록</h2>
+    <span class="ex-sub">{{ rows | length }}개 중 {{ registered }}개 등록</span>
+  </div>
+  <ul class="card list">
+    {% for e, ok in rows %}
+    <li class="ex-row">
+      {{ thumb(e.part, small=true) }}
+      <div class="grow" style="gap: 1px">
+        <span style="font-size: 15px; font-weight: 700">{{ e.name }}</span>
+        <span class="small">{{ e.part }} · {{ e.level }}</span>
+      </div>
+      <a class="chip chip-sm {{ 'chip-mint' if ok else 'chip-grey' }}" href="{{ url_for('admin.videos', ex=e.id) }}" style="text-decoration: none">{{ '등록됨' if ok else '없음' }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+  // 고른 파일 이름을 보여 준다
+  document.getElementById('file').addEventListener('change', function (e) {
+    var f = e.target.files[0];
+    document.getElementById('file-name').textContent = f ? f.name : '영상 파일 선택';
+  });
+</script>
+{% endblock %}

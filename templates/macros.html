@@ -1,0 +1,60 @@
+{# 화면 설계의 공통 부품을 매크로로 옮긴 것 #}
+
+{% macro icon(name, size=24, stroke=2.2) -%}
+{%- set paths = {
+  'back': '<path d="M15 18l-6-6 6-6"></path>',
+  'next': '<path d="M9 6l6 6-6 6"></path>',
+  'close': '<path d="M6 6l12 12M18 6L6 18"></path>',
+  'info': '<circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path>',
+  'error': '<circle cx="12" cy="12" r="10"></circle><path d="M15 9l-6 6M9 9l6 6"></path>',
+  'warn': '<path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path>',
+  'up': '<path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path>',
+  'down': '<path d="M3 7l6 6 4-4 8 8"></path><path d="M14 17h7v-7"></path>',
+  'swap': '<path d="M7 7h11l-3-3M17 17H6l3 3"></path>',
+  'settings': '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle>',
+  'home': '<path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"></path>',
+  'chart': '<path d="M5 20V11M12 20V4M19 20v-6"></path>',
+  'dumbbell': '<path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"></path>',
+  'upload': '<path d="M12 16V4M7 9l5-5 5 5"></path><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"></path>',
+  'film': '<rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M10 9l5 3-5 3z"></path>',
+} -%}
+<svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ stroke }}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ paths[name] | safe }}</svg>
+{%- endmacro %}
+
+{% macro play(size=24, fill='currentColor') -%}
+<svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="{{ fill }}" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"></path></svg>
+{%- endmacro %}
+
+{% macro back(href, label='뒤로') -%}
+<a class="icon-btn" href="{{ href }}" aria-label="{{ label }}">{{ icon('back') }}</a>
+{%- endmacro %}
+
+{# 운동 행의 왼쪽 썸네일: 부위 색 + 재생 점(시범 영상 자리) #}
+{% macro thumb(part, small=false) -%}
+<span class="thumb {{ 'thumb-sm' if small }}" style="background: {{ part | part_bg }}">
+  {%- if small %}<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{ part | part_fg }}" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"></path></svg>
+  {%- else %}<span class="dot">{{ play(12, part | part_fg) }}</span>{% endif -%}
+</span>
+{%- endmacro %}
+
+{% macro tabbar(active) -%}
+<div class="tabbar">
+  <nav aria-label="하단 메뉴">
+    <a class="tab {{ 'is-on' if active == 'home' }}" href="{{ url_for('home.index') }}" {% if active == 'home' %}aria-current="page"{% endif %}>{{ icon('home', 24, 2) }}<span>홈</span></a>
+    <span></span>
+    <a class="tab {{ 'is-on' if active == 'records' }}" href="{{ url_for('records.show') }}" {% if active == 'records' %}aria-current="page"{% endif %}>{{ icon('chart', 24, 2) }}<span>기록</span></a>
+  </nav>
+  <a class="fab" href="{{ url_for('routine.show') }}" aria-label="오늘의 루틴 보기">{{ play(24) }}</a>
+</div>
+{%- endmacro %}
+
+{# 운동 진행 막대: 운동마다 한 칸, 끝낸 세트만큼 채움 #}
+{% macro progress(state, on, off) -%}
+{%- set total = state['items'] | length -%}
+<div class="progress" role="progressbar" aria-label="루틴 진행: {{ total }}개 중 {{ state['i'] + 1 }}번째 운동" aria-valuenow="{{ state['i'] + 1 }}" aria-valuemin="1" aria-valuemax="{{ total }}">
+  {%- for it in state['items'] %}
+    {%- set pct = (100 * state['done'][loop.index0] / it['sets']) | round | int if loop.index0 not in state['skipped'] else 100 %}
+    <span style="background: linear-gradient(90deg, {{ on }} {{ pct }}%, {{ off }} {{ pct }}%)"></span>
+  {%- endfor %}
+</div>
+{%- endmacro %}

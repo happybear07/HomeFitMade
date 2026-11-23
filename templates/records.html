@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% from "macros.html" import back, icon, tabbar %}
+{% block title %}운동 기록 · 홈핏 메이트{% endblock %}
+{% block body %}
+<header class="topbar">{{ back(url_for('home.index')) }}</header>
+<section class="page-title"><h1>운동 기록</h1></section>
+
+<section class="headline">
+  <p class="big-line">{{ month }}월에 <span class="accent">{{ done_days }}일</span> 운동했어요</p>
+  <p style="margin-top: 4px; font-size: 14px; color: var(--text-sub)">지금 {{ streak }}일 연속 · 중단 {{ stopped }}번</p>
+</section>
+
+<section class="card cal" aria-label="{{ year }}년 {{ month }}월 달력">
+  <div class="cal-head">
+    <a class="icon-btn" href="{{ url_for('records.show', month=prev) }}" aria-label="이전 달">{{ icon('back', 20) }}</a>
+    <span class="num">{{ year }}년 {{ month }}월</span>
+    <a class="icon-btn" href="{{ url_for('records.show', month=next) }}" aria-label="다음 달">{{ icon('next', 20) }}</a>
+  </div>
+  <div class="cal-grid">
+    {% for w in '일월화수목금토' %}<span class="dow">{{ w }}</span>{% endfor %}
+    {% for _ in range(lead) %}<span></span>{% endfor %}
+    {% for d, mark in marks %}
+      <span class="cell {{ mark }} num" {% if mark == 'today' %}aria-current="date"{% endif %}
+            {% if mark in ('done', 'stopped') %}title="{{ '완료' if mark == 'done' else '중단' }}"{% endif %}>{{ d.day }}</span>
+    {% endfor %}
+  </div>
+  <div class="legend">
+    <span><i style="background: #D8F7EE; box-shadow: inset 0 0 0 1px #9FD9C8"></i>완료</span>
+    <span><i style="border: 1.5px dashed #8A8381; box-sizing: border-box"></i>중단</span>
+    <span><i style="background: #111111"></i>오늘</span>
+  </div>
+</section>
+
+<section class="card donut-card">
+  <h2>부위별 운동량</h2>
+  <p class="small" style="margin-top: 2px">이번 달 세트 수</p>
+  <div class="donut-row">
+    <div class="donut">
+      <svg width="140" height="140" viewBox="0 0 160 160" role="img" aria-label="상체 {{ sets['상체'] }}세트, 하체 {{ sets['하체'] }}세트, 코어 {{ sets['코어'] }}세트">
+        <circle cx="80" cy="80" r="56" fill="none" stroke="#E8E2E0" stroke-width="24"></circle>
+        {% for s in donut %}
+        <circle cx="80" cy="80" r="56" fill="none" stroke="{{ s.color }}" stroke-width="24" stroke-dasharray="{{ s.dash }}" stroke-dashoffset="{{ s.offset }}" transform="rotate(-90 80 80)"></circle>
+        {% endfor %}
+      </svg>
+      <div class="center"><b class="num">{{ total_sets }}</b><span class="small">세트</span></div>
+    </div>
+    <ul class="keys">
+      {% for part, color in [('상체', '#D1A08A'), ('하체', '#1C7460'), ('코어', '#111111')] %}
+      <li><i style="background: {{ color }}"></i><span>{{ part }}</span><strong class="num">{{ sets[part] }}</strong></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <p class="note note-plain" style="margin-top: 14px">
+    {% if weakest %}{{ weakest }}를 조금 더 하면 균형이 맞아요.{% else %}이번 달 기록이 아직 없어요.{% endif %}
+  </p>
+</section>
+
+<section class="section" style="margin-top: 20px">
+  <h2 style="margin: 0 0 10px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em">최근 기록</h2>
+  <ul class="card list">
+    {% for r in recent %}
+    {% set done_n = r['items'] | selectattr('sets_done') | list | length %}
+    <li class="rec-row">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <span class="num" style="font-size: 15px; font-weight: 700">{{ r.date | ko_date }}</span>
+        <span class="ex-sub">
+          {% if r.completed %}운동 {{ done_n }}개 · {{ r.minutes | minutes }} · {{ r.calories }}kcal
+          {% else %}운동 {{ done_n }}/{{ r['items'] | length }} · {{ r.minutes | minutes }}{% endif %}
+        </span>
+      </div>
+      <span class="chip chip-sm {{ 'chip-mint' if r.completed else 'chip-grey' }}">{{ '완료' if r.completed else '중단' }}</span>
+    </li>
+    {% else %}
+    <li><p class="empty-text">아직 기록이 없어요. 첫 루틴을 끝내면 여기에 쌓여요.</p></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<p class="disclaimer" style="margin: 14px 20px 0">{{ DISCLAIMER }}</p>
+{{ tabbar('records') }}
+{% endblock %}

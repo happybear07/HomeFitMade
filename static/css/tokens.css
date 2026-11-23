@@ -1,0 +1,28 @@
+/* 디자인 토큰: 디자인 시스템 v0.6, 팔레트 03 민트 클레이
+   규칙: 민트·틸 위에는 흰 글자를 쓰지 않는다(대비 2.6). 그 위 글자는 #111. */
+:root {
+  --bg: #F0EBEA;          /* 뼈색 바탕 */
+  --card: #FFFFFF;
+  --text: #111111;        /* 팔레트에 글자색이 없어 추가한 중립색 */
+  --text-sub: #5F5856;    /* 흰 카드 6.9, 뼈색 5.8 */
+  --text-body: #3B3533;
+  --brand: #32B291;       /* 틸: 홈 헤더, 휴식 화면 */
+  --cta: #4DFFCF;         /* 네온 민트: 주요 버튼, 재생 버튼 */
+  --mint: #4BE1BB;
+  --accent-text: #1C7460; /* 진한 틸: 강조 숫자, 링크 */
+  --mint-soft: #D8F7EE;
+  --clay: #D1A08A;
+  --line: #E8E2E0;
+  --muted-bg: #E3DDDB;
+  --danger: #B42318;
+  --danger-soft: #FDECEA;
+
+  --radius-card: 24px;
+  --radius-btn: 16px;
+  --radius-sheet: 32px;
+  --shadow-card: 0 1px 2px rgba(17, 17, 17, .04), 0 8px 24px rgba(17, 17, 17, .07);
+  --shadow-soft: 0 1px 2px rgba(17, 17, 17, .04), 0 6px 18px rgba(17, 17, 17, .06);
+  --shadow-cta: 0 10px 22px rgba(50, 178, 145, .35);
+  --shadow-up: 0 -6px 24px rgba(17, 17, 17, .07);
+  --font: 'Inter', 'Noto Sans KR', sans-serif;
+}

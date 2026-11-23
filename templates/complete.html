@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}운동 완료 · 홈핏 메이트{% endblock %}
+{% block body %}
+<header class="done-head">
+  <div class="done-bear">
+    <img src="{{ url_for('static', filename='img/bear/cheer.svg') }}" alt="앞발을 들어 기뻐하는 곰">
+  </div>
+</header>
+
+<section class="card summary">
+  <span class="chip chip-neon" style="align-self: flex-start">{% if streak >= 2 %}{{ streak }}일 연속 달성{% else %}오늘 운동 완료{% endif %}</span>
+  <h1>
+    <span><span class="accent">{{ record.minutes | minutes }}</span> 운동으로</span>
+    <span><span class="accent">{{ record.calories }}kcal</span> 태웠어요</span>
+  </h1>
+  <p class="small">칼로리는 운동 강도(MET)와 몸무게로 계산한 추정치예요.</p>
+</section>
+
+<section class="card parts-card">
+  <span style="font-size: 14px; font-weight: 700">운동 {{ count }}개</span>
+  <div class="chips">
+    {% for part, n in parts.items() %}
+    <span class="chip chip-sm" style="background: {{ part | part_bg }}; color: {{ '#7A4A35' if part == '상체' else part | part_fg }}">{{ part }} {{ n }}</span>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="card feel">
+  <h2>오늘 운동은 어땠나요?</h2>
+  <p class="small" style="margin-top: 4px">다음 루틴의 횟수를 맞추는 데 써요</p>
+  <form method="post" action="{{ url_for('workout.feedback') }}" class="feel-grid" role="group" aria-label="운동 강도 느낌">
+    {% for f in feedback %}
+    {% set on = record.feedback == f %}
+    <button type="submit" name="feedback" value="{{ f }}" aria-pressed="{{ 'true' if on else 'false' }}">
+      <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
+        <circle cx="28" cy="28" r="26" fill="{{ '#4DFFCF' if on else '#E3DDDB' }}"></circle>
+        {% set c = '#111111' if on else '#857E7C' %}
+        {% if f == '쉬웠어요' %}
+          <path d="M17 24 Q20.5 20.5 24 24 M32 24 Q35.5 20.5 39 24" fill="none" stroke="{{ c }}" stroke-width="2.6" stroke-linecap="round"></path>
+          <path d="M17 32 Q28 45 39 32" fill="none" stroke="{{ c }}" stroke-width="2.6" stroke-linecap="round"></path>
+        {% elif f == '적당해요' %}
+          <circle cx="20.5" cy="25" r="2.8" fill="{{ c }}"></circle><circle cx="35.5" cy="25" r="2.8" fill="{{ c }}"></circle>
+          <path d="M20 34 Q28 41 36 34" fill="none" stroke="{{ c }}" stroke-width="2.6" stroke-linecap="round"></path>
+        {% else %}
+          <path d="M17 21 L23 24.5 L17 28 M39 21 L33 24.5 L39 28" fill="none" stroke="{{ c }}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M19 37 Q23.5 33 28 37 T37 37" fill="none" stroke="{{ c }}" stroke-width="2.6" stroke-linecap="round"></path>
+          <path d="M44 10 Q48 16 44 19 Q40 16 44 10 Z" fill="#9CC7EA"></path>
+        {% endif %}
+      </svg>
+      {{ f }}
+    </button>
+    {% endfor %}
+  </form>
+</section>
+
+<div style="height: 16px"></div>
+<div class="bottom-sheet">
+  <a class="cta" href="{{ url_for('home.index') }}">홈으로</a>
+  <p class="disclaimer">{{ DISCLAIMER }}</p>
+</div>
+{% endblock %}

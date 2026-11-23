@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "macros.html" import icon, progress, thumb %}
+{% block title %}휴식 · 홈핏 메이트{% endblock %}
+{% block app_class %}screen-teal{% endblock %}
+{% block body %}
+{% set total = state['items'] | length %}
+{% set r = 104 %}{% set circ = 653.5 %}
+<header class="run-head">
+  <form method="post" action="{{ url_for('workout.stop') }}" onsubmit="return confirm('운동을 그만할까요? 지금까지 한 세트는 기록돼요.')">
+    <button class="icon-btn" type="submit" aria-label="그만하기">{{ icon('close', 22) }}</button>
+  </form>
+  <span class="count num">{{ state['i'] + 1 }} / {{ total }}</span>
+  <span></span>
+</header>
+{{ progress(state, '#111111', 'rgba(17, 17, 17, .18)') }}
+
+<section class="ring-wrap">
+  <div class="ring">
+    <svg width="232" height="232" viewBox="0 0 232 232" role="img" aria-label="휴식 {{ rest_sec }}초">
+      <circle cx="116" cy="116" r="{{ r }}" fill="none" stroke="rgba(17, 17, 17, .15)" stroke-width="12"></circle>
+      <circle id="ring" cx="116" cy="116" r="{{ r }}" fill="none" stroke="#111111" stroke-width="12" stroke-linecap="round"
+              stroke-dasharray="{{ circ }}" stroke-dashoffset="0" transform="rotate(-90 116 116)"></circle>
+    </svg>
+    <div class="center">
+      <span class="label">휴식</span>
+      <span class="time num" id="rest-time" aria-live="polite">{{ rest_sec // 60 }}:{{ '%02d' | format(rest_sec % 60) }}</span>
+    </div>
+  </div>
+</section>
+
+<main class="sheet rest-sheet">
+  <span class="grip" aria-hidden="true"></span>
+  <span style="margin-top: 16px; font-size: 13px; font-weight: 600; color: var(--text-sub)">다음 운동</span>
+  <div class="next-card">
+    {{ thumb(ex.part) }}
+    <div class="grow" style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+      <span class="ex-name">{{ ex.name }}</span>
+      <span class="ex-sub num">세트 {{ state['set'] }} / {{ item['sets'] }}</span>
+    </div>
+    <span class="num" style="font-size: 16px; font-weight: 800">{{ item['unit'] | amount(item['reps']) }}</span>
+  </div>
+  <a class="cta" id="next" href="{{ url_for('workout.show') }}" style="margin-top: 16px">{{ '바로 다음 세트' if state['set'] > 1 else '다음 운동 시작' }}</a>
+  <p class="disclaimer" style="margin: 10px 0 14px">{{ DISCLAIMER }}</p>
+</main>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+<script>
+  HomefitTimer.restTimer({
+    seconds: {{ rest_sec }},
+    display: document.getElementById('rest-time'),
+    ring: document.getElementById('ring'),
+    circumference: 653.5,   // 2π × 104 (위 원의 반지름)
+    nextUrl: document.getElementById('next').href,
+  });
+</script>
+{% endblock %}

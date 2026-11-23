@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% from "macros.html" import back, icon %}
+{% block title %}내 정보 · 홈핏 메이트{% endblock %}
+{% block body %}
+<header class="topbar">
+  {% if first_time %}<span></span>{% else %}{{ back(url_for('home.index')) }}{% endif %}
+  <a class="top-link" href="{{ url_for('admin.videos') }}">관리자</a>
+</header>
+<section class="page-title">
+  <h1>내 정보</h1>
+  <p>{% if first_time %}키, 몸무게, 운동 경험으로 루틴을 골라 드려요{% else %}한 번 입력하면 설정에서 언제든 바꿀 수 있어요{% endif %}</p>
+</section>
+
+<form method="post" novalidate style="display: contents">
+  <div class="form">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div class="field-grid">
+        <label class="field {{ 'has-error' if errors.height }}">
+          <span class="field-label">키</span>
+          <span class="field-row">
+            <input type="number" name="height" inputmode="decimal" step="0.1" value="{{ form.height }}" placeholder="170"
+                   {% if errors.height %}aria-invalid="true" aria-describedby="h-err"{% endif %} required>
+            <span class="field-unit">cm</span>
+          </span>
+        </label>
+        <label class="field {{ 'has-error' if errors.weight }}">
+          <span class="field-label">몸무게</span>
+          <span class="field-row">
+            <input type="number" name="weight" inputmode="decimal" step="0.1" value="{{ form.weight }}" placeholder="65"
+                   {% if errors.weight %}aria-invalid="true" aria-describedby="w-err"{% endif %} required>
+            <span class="field-unit">kg</span>
+          </span>
+        </label>
+      </div>
+      {% if errors.height %}<span id="h-err" class="field-error">{{ errors.height }}</span>{% endif %}
+      {% if errors.weight %}<span id="w-err" class="field-error">{{ errors.weight }}</span>{% endif %}
+    </div>
+
+    <fieldset>
+      <legend>운동 경험</legend>
+      <div class="seg">
+        {% for lv in levels %}
+        <label><input type="radio" name="level" value="{{ lv }}" {{ 'checked' if form.level == lv }}>{{ lv }}</label>
+        {% endfor %}
+      </div>
+      <span class="hint" id="level-hint" data-hints="{{ level_hint | tojson | forceescape }}">{{ level_hint[form.level] if form.level in level_hint else '' }}</span>
+      {% if errors.level %}<span class="field-error">{{ errors.level }}</span>{% endif %}
+    </fieldset>
+
+    <section class="card bmi-card" aria-label="BMI">
+      {% if bmi %}
+      {% set seg = ['저체중', '정상', '비만 전단계(과체중)', '1단계 비만', '2단계 이상 비만'] %}
+      <div class="bmi-head">
+        <div style="display: flex; align-items: baseline; gap: 8px">
+          <span class="field-label">BMI</span>
+          <span class="bmi-value num">{{ '%.1f' | format(bmi) }}</span>
+        </div>
+        <span class="chip chip-mint">{{ category }}</span>
+      </div>
+      <div class="bmi-bar">
+        <div class="scale">{% for s in seg %}<span class="{{ 'on' if s == category }}"></span>{% endfor %}</div>
+        <span class="marker" aria-hidden="true" style="left: {{ '%.1f' | format(marker) }}%"></span>
+        <div class="labels num"><span>18.5</span><span>23</span><span>25</span><span>30</span><span></span></div>
+      </div>
+      {% else %}
+      <div class="bmi-head"><span class="field-label">BMI</span></div>
+      <p class="small">키와 몸무게를 저장하면 BMI와 분류를 보여 드려요.</p>
+      {% endif %}
+      <p class="small">BMI는 근육량을 구분하지 못해 참고로만 써요 · 기준 대한비만학회</p>
+    </section>
+
+    <p class="small health">{{ icon('info', 16, 2) }}<span>질환이 있거나 통증이 있으면 운동 전에 의사와 상담하세요.</span></p>
+  </div>
+
+  <div class="bottom-sheet">
+    <button class="cta" type="submit">저장하기</button>
+    <p class="disclaimer">{{ DISCLAIMER }}</p>
+  </div>
+</form>
+{% endblock %}
+{% block scripts %}
+<script>
+  // 고른 난이도의 설명으로 바꿔 보여 준다
+  (function () {
+    var hint = document.getElementById('level-hint');
+    var hints = JSON.parse(hint.dataset.hints);
+    document.querySelectorAll('input[name="level"]').forEach(function (r) {
+      r.addEventListener('change', function () { hint.textContent = hints[r.value] || ''; });
+    });
+  })();
+</script>
+{% endblock %}

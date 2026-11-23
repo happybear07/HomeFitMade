@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% from "macros.html" import back, icon, thumb %}
+{% block title %}오늘의 루틴 · 홈핏 메이트{% endblock %}
+{% block body %}
+<header class="topbar">{{ back(url_for('home.index')) }}</header>
+
+<section class="page-title stack">
+  <h1>오늘의 루틴</h1>
+  <div class="chips">
+    <span class="chip chip-mint">{{ routine.level }}</span>
+    <span class="chip chip-white">운동 {{ routine['items'] | length }}개</span>
+    <span class="chip chip-white">약 {{ minutes | minutes }}</span>
+  </div>
+</section>
+
+<nav class="seg" aria-label="운동 부위" style="margin: 16px 20px 0">
+  {% for p in parts %}
+  <a href="{{ url_for('routine.show', part=p) }}" class="{{ 'is-on' if p == part }}" {% if p == part %}aria-current="true"{% endif %}>{{ p }}</a>
+  {% endfor %}
+</nav>
+
+<div class="stack" style="margin: 12px 20px 0">
+  {% if adjust_reason %}
+  <p class="note note-mint">{{ icon('down' if '줄' in adjust_reason else 'up', 16, 2.4) }}{{ adjust_reason }}</p>
+  {% endif %}
+  {% for before, after in substitutions %}
+  <p class="note note-mint">{{ icon('swap', 16, 2.2) }}관절을 아끼려고 {{ before }} 대신 {{ after }}를 넣었어요</p>
+  {% endfor %}
+  {% if routine.short %}
+  <p class="note note-plain">{{ routine.level }} {{ part }} 운동이 {{ routine['items'] | length }}개라 짧은 루틴이에요.</p>
+  {% endif %}
+</div>
+
+<ol class="card list" style="margin: 12px 20px 0">
+  {% for it in routine['items'] %}
+  {% set ex = by_id[it.id] %}
+  <li class="ex-row">
+    {{ thumb(ex.part) }}
+    <div class="grow">
+      <span class="ex-name">{{ ex.name }}</span>
+      <span class="ex-sub">{{ ex.part }}{% if ex.unit == '초' %} · 버티기{% endif %}</span>
+      {% if ex.is_high_load %}<span class="chip chip-danger" style="align-self: flex-start">관절 부담 높음</span>{% endif %}
+    </div>
+    <span class="ex-dose num">{{ it | dose(true) }}</span>
+  </li>
+  {% endfor %}
+</ol>
+
+<div style="height: 16px"></div>
+<form class="bottom-sheet" method="post" action="{{ url_for('workout.start') }}">
+  <input type="hidden" name="part" value="{{ part }}">
+  <button class="cta" type="submit" {{ 'disabled' if not routine['items'] }}>시작하기</button>
+  <p class="disclaimer">{{ DISCLAIMER }}</p>
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+[project]
+name = "homefit-mate"
+version = "0.1.0"
+description = "홈핏 메이트: 키·몸무게와 난이도로 맨몸운동 루틴을 추천하는 로컬 Flask 앱"
+requires-python = ">=3.11"
+dependencies = ["flask>=3.0"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
